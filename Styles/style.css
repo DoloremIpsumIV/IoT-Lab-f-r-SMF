@@ -1,0 +1,157 @@
+@font-face {
+    font-family: MainFont;
+    src: url(../Fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+* {
+    font-family: MainFont;
+    color: white;
+}
+
+body {
+    font-size: clamp(14px, calc(14px + (16 - 14) * (100vw - 320px) / (1440 - 320)), 16px);
+    line-height: 1.5;
+    max-width: 1440px;
+    background-color: black;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px 24px 0px 24px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+    margin: 128px 0 128px 0;
+    padding: 24px;
+}
+
+h1 {
+    font-size: clamp(28px, calc(28px + (42 - 28) * (100vw - 320px) / (1440 - 320)), 42px);
+    line-height: 1;
+}
+
+h2 {
+    font-size: clamp(20px, calc(20px + (26 - 20) * (100vw - 320px) / (1440 - 320)), 26px);
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: clamp(17px, calc(17px + (20 - 17) * (100vw - 320px) / (1440 - 320)), 20px);
+    line-height: 1.2;
+}
+
+body.pilot {
+    font-size: clamp(14px, calc(14px + (16 - 14) * (100vw - 320px) / (1440 - 320)), 16px);
+    line-height: 1.5;
+}
+
+body.pilot h1 {
+    font-size: clamp(26px, calc(26px + (33 - 26) * (100vw - 320px) / (1440 - 320)), 33px);
+    line-height: 1;
+}
+
+body.pilot h2 {
+    font-size: clamp(20px, calc(20px + (26 - 20) * (100vw - 320px) / (1440 - 320)), 26px);
+    line-height: 1.2;
+}
+
+body.pilot h3 {
+    font-size: clamp(17px, calc(17px + (20 - 17) * (100vw - 320px) / (1440 - 320)), 20px);
+    line-height: 1.2;
+}
+
+nav {
+    max-width: 1440px;
+    position: sticky;
+    box-shadow: 0 1px 0 white;
+    padding: 24px;
+}
+
+button {
+    height: fit-content;
+    width: fit-content;
+}
+
+.item-box {
+    flex-flow: row;
+    flex: 1 0 0;
+    place-content: center;
+    align-items: center;
+    gap: 48px;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    position: relative;
+}
+
+.item-container {
+    background-color: #26f;
+    flex: 1 0 0;
+    width: 432px;
+    height: 413px;
+    border-radius: 8px;
+}
+
+#navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#rightside-nav-bar {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+#hero {
+    padding: 0;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: row;
+    place-content: center;
+    align-items: center;
+    padding: 0px 24px;
+    justify-content: space-between;
+    gap: 48px;
+    width: 100%;
+    max-width: 1440px;
+}
+
+#hero div {
+    width: 672px;
+}
+
+#hero-img {
+    max-width: 1440px;
+    width: 552px;
+    height: 330px;
+    outline: solid white 1px;
+}
+
+#body-grid-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#body-grid {
+    margin: 128px;
+    display: flex;
+    flex: none;
+    flex-flow: column;
+    place-content: center;
+    gap: 48px;
+    width: 100%;
+    padding: 0;
+    position: relative;
+    overflow: visible;
+    max-width: 1440px;
+
+}
