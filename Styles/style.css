@@ -134,11 +134,11 @@ button {
     outline: solid white 1px;
 }
 
-#body-grid-header{
+#body-grid-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 #body-grid {
@@ -154,4 +154,38 @@ button {
     overflow: visible;
     max-width: 1440px;
 
+}
+
+@media only screen and (max-width: 750px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #hero {
+        flex-flow: column;
+        align-items: baseline;
+        overflow-wrap: normal;
+    }
+
+    #hero div {
+        width: 100%;
+    }
+
+    #hero img {
+        width: 100%;
+    }
+
+    .item-box {
+        flex-flow: column;
+    }
+
+    .item-container {
+        flex: unset;
+    }
+}
+@media only screen and (max-width: 450px) {
+ .item-container {
+        width: 100%;
+    }
 }
