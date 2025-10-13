@@ -65,16 +65,28 @@ body.pilot h3 {
     line-height: 1.2;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
 nav {
     max-width: 1440px;
-    position: sticky;
     box-shadow: 0 1px 0 white;
     padding: 24px;
+    z-index: 10000;
 }
+
 
 button {
     height: fit-content;
     width: fit-content;
+    
 }
 
 .item-box {
@@ -87,6 +99,7 @@ button {
     padding: 0;
     display: flex;
     position: relative;
+    z-index: -1;
 }
 
 .item-container {
@@ -101,6 +114,8 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 95px;
+    z-index: 10001;
 }
 
 #rightside-nav-bar {
@@ -150,10 +165,9 @@ button {
     gap: 48px;
     width: 100%;
     padding: 0;
-    position: relative;
     overflow: visible;
     max-width: 1440px;
-
+    z-index: -1;
 }
 
 @media only screen and (max-width: 750px) {
@@ -184,8 +198,9 @@ button {
         flex: unset;
     }
 }
+
 @media only screen and (max-width: 450px) {
- .item-container {
+    .item-container {
         width: 100%;
     }
 }
