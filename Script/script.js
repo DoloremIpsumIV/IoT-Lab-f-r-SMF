@@ -1,41 +1,75 @@
-async function displayDescriptions() {
-    var boxes = document.querySelectorAll(".item-box");
-    var projectAmount = await fetchPilotCaseAmount();
-    var currentProject = 0;
+function buildCard(p) {
+  const card = document.createElement("article");
+  card.className = "card";
+  card.tabIndex = 0;                       
+  card.setAttribute("role", "link");       
+  card.setAttribute("aria-label", p.company);
 
-    var showAllButton = document.getElementById("show-all-btn");
-    showAllButton.style.cursor = "pointer";
-    showAllButton.addEventListener("click", () => { location.href = "../Pages/Projekt.html"; });
+  const img = document.createElement("img");
+  img.className = "card-img";
+  img.src = p.image + ".jpg";
+  img.alt = "bild på " + p.company;
+  img.loading = "lazy";
 
-    for (const box of boxes) {
-        var boxContainers = box.children;
-        for (var i = 0; i < boxContainers.length; i++) {
-            if (currentProject >= projectAmount) {
-                break;
-            }
+  var body = document.createElement("div");
+  body.className = "card-body";
 
-            var container = boxContainers[i];
-            var pilotCaseObj = await fetchPilotCaseById(currentProject + 1);
-            var img = document.createElement("img");
-            var title = document.createElement("h1");
-            var description = document.createElement("p");
-            var button = document.createElement("a");
+  var h = document.createElement("h3");
+  h.className = "card-title";
+  h.textContent = p.company;
 
-            img.src = pilotCaseObj.image + ".jpg";
-            img.alt = "bild på " + pilotCaseObj.company;
-            title.innerText = pilotCaseObj.company;
-            description.innerText = pilotCaseObj["brief-description"];
-            button.innerText = "Läs mer om Pilotcase";
-            button.href = `../Pages/clicked-project.html?Id=${pilotCaseObj.id}`
+  var txt = document.createElement("p");
+  txt.className = "card-text";
+  txt.textContent = p["brief-description"];
 
-            container.appendChild(img);
-            container.appendChild(title);
-            container.appendChild(description);
-            container.appendChild(button);
-            currentProject++;
-        }
+  var cta = document.createElement("button");
+  cta.className = "card-cta";
+  cta.type = "button";
+  cta.textContent = "Läs mer om Pilotcase";
+  cta.addEventListener("click", function (e) {
+    e.stopPropagation(); 
+    window.location.href = "../Pages/clicked-project.html?Id=" + p.id;
+  });
+
+  
+  card.addEventListener("click", function () {
+    window.location.href = "../Pages/clicked-project.html?Id=" + p.id;
+  });
+  card.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      window.location.href = "../Pages/clicked-project.html?Id=" + p.id;
     }
+  });
+
+  body.append(h, txt, cta);
+  card.append(img, body);
+  return card;
 }
+
+
+
+async function displayDescriptions() {
+  var boxes = document.querySelectorAll(".item-box");
+  var projectAmount = await fetchPilotCaseAmount();
+  var currentProject = 0;
+
+  for (var box of boxes) {
+    var boxContainers = box.children;
+    for (var i = 0; i < boxContainers.length; i++) {
+      if (currentProject >= projectAmount) break;
+
+      var container = boxContainers[i];
+      var pilotCaseObj = await fetchPilotCaseById(currentProject + 1);
+
+      var card = buildCard(pilotCaseObj);
+      container.appendChild(card);
+
+      currentProject++;
+    }
+  }
+}
+
 
 async function fetchPilotCaseById(id) {
     try {
