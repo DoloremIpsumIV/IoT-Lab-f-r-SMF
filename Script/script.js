@@ -3,6 +3,10 @@ async function displayDescriptions() {
     var projectAmount = await fetchPilotCaseAmount();
     var currentProject = 0;
 
+    var showAllButton = document.getElementById("show-all-btn");
+    showAllButton.style.cursor = "pointer";
+    showAllButton.addEventListener("click", () => { location.href = "../Pages/Projekt.html"; });
+
     for (const box of boxes) {
         var boxContainers = box.children;
         for (var i = 0; i < boxContainers.length; i++) {

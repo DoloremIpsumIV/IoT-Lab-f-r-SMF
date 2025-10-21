@@ -79,8 +79,6 @@ async function fetchPilotCaseById(id) {
         return pilotCase;
 
     } catch (error) {
-        console.error("Error med att fetcha pilot studie:", error);
-        throw error;
     }
 }
 
@@ -96,8 +94,6 @@ async function fetchPilotCaseAmount() {
         return pilotCase;
     }
     catch (error) {
-        console.error("Error med att fetcha antal pilot studier:", error);
-        throw error;
     }
 }
 
@@ -112,7 +108,6 @@ async function fetchProjectsData() {
         var data = await response.json();
         projectsData = data.pilotcases;
     } catch (error) {
-        console.error("Error fetching projects data:", error);
     }
 }
 
@@ -184,24 +179,27 @@ function displaySearchResults(results) {
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-    await fetchProjectsData();
-    await displayDescriptions();
+    try {
+        await fetchProjectsData();
+        await displayDescriptions();
 
-    var searchButton = document.getElementById("search-button");
-    var searchInput = document.getElementById("search-input");
+        var searchButton = document.getElementById("search-button");
+        var searchInput = document.getElementById("search-input");
 
-    searchButton.addEventListener("click", () => {
-        startSearch();
-    });
-    searchInput.addEventListener("keypress", (e) => {
-
-        if (e.key === 'Enter') {
+        searchButton.addEventListener("click", () => {
             startSearch();
-        }
-    });
+        });
+        searchInput.addEventListener("keydown", (e) => {
+            if (e.key === 'Enter') {
+                startSearch();
+            }
+        });
 
-    var showAllButton = document.getElementById("show-all-btn");
-    showAllButton.addEventListener("click", () => { location.reload() })
+        var showAllButton = document.getElementById("show-all-btn");
+        showAllButton.style.cursor = "pointer";
+        showAllButton.addEventListener("click", () => { location.reload(); });
+    } catch (error) {
+    }
 });
 
 function startSearch() {
@@ -209,8 +207,12 @@ function startSearch() {
     var query = searchInput.value;
     if (!query.trim()) {
         displayDescriptions();
-    } else {
+    }
+    else {
         var results = searchProjects(query);
         displaySearchResults(results);
+    }
+    if (query.length === 0) {
+        location.reload();
     }
 }
