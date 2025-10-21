@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IoT Lab för SMF</title>
     <link rel="stylesheet" href="../Styles/style.css">
-    <script src="../Script/script.js"></script>
 </head>
 
 <body>
@@ -36,12 +35,17 @@
             </div>
             <img id="hero-img">
         </div>
+        <div class="search-container">
+            <h2>Sök projekt</h2>
+            <input type="text" id="search-input" placeholder="Sök efter företag eller beskrivning...">
+            <div class="search-results" id="search-results"></div>
+        </div>
         <div id="body-grid">
             <div id="body-grid-header">
                 <h2>
                     Utvalda Projekt
                 </h2>
-                <button>
+                 <button id="show-all-btn">
                     Alla projekt
                 </button>
             </div>
@@ -86,6 +90,8 @@
     <footer>
 
     </footer>
+    <script src="../Script/script.js"></script>
+
 </body>
 
 </html>
