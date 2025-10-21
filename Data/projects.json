@@ -230,6 +230,13 @@
             "brief-description": "Böda Sand fick stöttning i val av hårdvara och med integrationen mot deras egna system för att digitalisera och mäta hur människor rör sig.",
             "full-description": "Böda Sand är en camping på Öland som med hjälp av labbet byggde ut sitt IoT-nätverk. De fick även stöttning i val av hårdvara och med integrationen mot deras egna system för att digitalisera och mäta hur människor rör sig på deras områden. Man valde även att koppla upp ett flertal väderstationer för att få lokala väderdata.",
             "image": "../Images/33"
+        },
+        {
+            "id": 34,
+            "company": "Sport Appeal",
+            "brief-description": "Nugående projekt med Sport Appeal som mäter styrka med hjälp av IMTP övningar och sensorer.",
+            "full-description": "Tillsammans med Sport Appeal fokuserar vi på att utveckla ett system för att mäta styrka med hjälp av övningen Isometric Mid-thigh Pull (IMTP). En lastcellssensor används för att fånga kraften som utövas under draget. Denna data bearbetas sedan av en mikrokontroller, överförs trådlöst, lagras säkert i en databas och slutligen nås och visualiseras av användare genom en webb- eller mobilapplikation.",
+            "image": "../Images/34"
         }
     ]
 }
