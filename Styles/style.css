@@ -438,7 +438,7 @@ body.projects #hero {
     align-items: center;
     text-align: center;
     gap: 24px;
-    padding-block: clamp(64px, 12vw, 160px);
+    padding-block: clamp(10px, 6vw, 5px);
 }
 
 body.projects #hero>div {
@@ -468,6 +468,14 @@ body.projects .search-container h2 {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+
+body.projects .search-container {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 48px;
 }
 body.projects #search-input {
     width: min(285px, 72vw);
