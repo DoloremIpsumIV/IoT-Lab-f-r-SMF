@@ -630,13 +630,8 @@ body.projects .search-button {
     display: block;
 }
 
-<<<<<<< HEAD
-.card-body{
-    padding: 12px;
-=======
 .card-body {
     padding: 16px;
->>>>>>> 07c6b055d2903814725aadedead1f4223eee4ffa
     display: grid;
     gap: 10px;
 }
@@ -667,13 +662,7 @@ body.projects .search-button {
     gap: 8px;
 }
 
-<<<<<<< HEAD
-
-
-.card-cta:hover{
-=======
 .card-cta:hover {
->>>>>>> 07c6b055d2903814725aadedead1f4223eee4ffa
     color: #ffe000;
 }
 
