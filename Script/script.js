@@ -22,7 +22,7 @@ async function displayDescriptions() {
             img.alt = "bild på " + pilotCaseObj.company;
             description.innerText = pilotCaseObj["brief-description"];
             button.innerText = "Läs mer om Pilotcase";
-            button.href = `../Pages/clicked-project/${pilotCaseObj.company}.html`
+            button.href = `../Pages/clicked-project.html?Id=${pilotCaseObj.id}`
 
             container.appendChild(title);
             container.appendChild(img);
