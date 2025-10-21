@@ -29,29 +29,6 @@ async function displayDescriptions() {
     }
 }
 
-async function fetchPilotCaseByName(name) {
-    try {
-        var response = await fetch("../Data/projects.json");
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        var searchName = name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-        var data = await response.json();
-        var pilotCase = data.pilotcases.find(caseItem => caseItem.company.toLowerCase().replace(/[^a-z0-9]+/g, '-') === searchName);
-
-        if (!pilotCase) {
-            throw new Error(`Inga pilot studier hittade med ID: ${id}`);
-        }
-
-
-        return pilotCase;
-
-    } catch (error) {
-        console.error("Error med att fetcha pilot studie:", error);
-        throw error;
-    }
-}
-
 async function fetchPilotCaseById(id) {
     try {
         var response = await fetch("../Data/projects.json");
@@ -92,63 +69,5 @@ async function fetchPilotCaseAmount() {
         throw error;
     }
 }
-let projectsData = [];
-
-async function fetchProjectsData() {
-    try {
-        const response = await fetch('../Data/projects.json');
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
-        projectsData = data.pilotcases;
-    } catch (error) {
-        console.error('Error fetching projects data:', error);
-    }
-}
-
-function searchProjects(query) {
-    if (!query.trim()) {
-        return [];
-    }
-
-    const searchTerm = query.toLowerCase();
-    return projectsData.filter(project => {
-        return (
-            project.company.toLowerCase().includes(searchTerm) ||
-            project['brief-description'].toLowerCase().includes(searchTerm) ||
-            project['full-description'].toLowerCase().includes(searchTerm)
-        );
-    });
-}
-
-function displaySearchResults(results) {
-    const resultsContainer = document.getElementById('search-results');
-
-    if (results.length === 0) {
-        resultsContainer.innerHTML = '<p>Inga projekt hittades.</p>';
-        return;
-    }
-
-    resultsContainer.innerHTML = results.map(project => `
-                <div class="search-result-item">
-                    <h3>${project.company}</h3>
-                    <p><strong>Kort beskrivning:</strong> ${project['brief-description']}</p>
-                    <p><strong>Fullständig beskrivning:</strong> ${project['full-description']}</p>
-                </div>
-            `).join('');
-}
-
-document.addEventListener('DOMContentLoaded', async () => {
-    await fetchProjectsData();
-
-    const searchInput = document.getElementById('search-input');
-
-    searchInput.addEventListener('input', (e) => {
-        const query = e.target.value;
-        const results = searchProjects(query);
-        displaySearchResults(results);
-    });
-});
 
 document.addEventListener("DOMContentLoaded", displayDescriptions)
