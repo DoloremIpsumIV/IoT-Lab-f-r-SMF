@@ -330,7 +330,7 @@ button a {
 
 .cta-actions {
     display: flex;
-    gap: 16px;
+    gap: 24px;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 12px;
@@ -347,15 +347,11 @@ button a {
     border: 1px solid rgba(255, 255, 255, .15);
     background: transparent;
     color: inherit;
-    transition: transform .15s ease, border-color .15s ease;
 }
 
 .btn:hover {
-    transform: translateY(-1px);
     border-color: #ffe000;
 }
-
-.btn-outline {}
 
 
 .form-card {
@@ -566,292 +562,133 @@ body.projects .search-button {
     margin-top: -1px;
 }
 
-
-
-
-
 /* Projektkort design */
-
-
 .item-box {
-
-
     flex-wrap: wrap;
-
-
 }
-
-
-
-
 
 .item-container {
-
-
     flex: 1 1 calc((100% - 96px)/3);
-
-
     min-width: 260px;
-
-
 }
-
-
-
-
 
 @media (max-width: 1100px) {
-
-
     .item-box {
-
-
         gap: 24px;
-
-
     }
-
 
     .item-container {
-
-
         flex-basis: calc((100% - 24px)/2);
-
-
     }
-
-
 }
 
-
 @media (max-width:750px) {
-
-
     .item-container {
         flex-basis: 100%;
     }
-
-
 }
-
-
-
-
 
 .card {
-
-
     display: grid;
-
-
     grid-template-rows: auto 1fr;
-
-
     background: #0b0b0b;
-
-
     border: 1px solid rgba(93, 79, 177, 1.0);
-
-
     border-radius: 12px;
-
-
     overflow: hidden;
-
-
     height: 100%;
-
-
     transition: transform .45s ease, border-color .15s ease, box-shadow .15s ease;
-
-
     position: relative;
-
-
     cursor: pointer;
-
-
     transform-origin: center top;
-
-
     will-change: transform;
-
-
 }
-
-
-
-
 
 .card:focus-visible {
-
-
     outline: 2px solid rgba(93, 79, 177, 1.0);
-
-
     outline-offset: 2px;
-
-
 }
-
-
-
-
 
 .card:hover,
 .card:focus-within {
-
-
     transform: scale(1.025);
-
-
     border-color: rgba(93, 79, 177, 1.0);
-
-
 }
-
 
 .card-img,
-
-
 .card-body,
-
-
 .card-title,
-
-
 .card-text,
-
-
 .card-cta {
-
-
     position: relative;
-
-
     z-index: 2;
-
-
 }
-
-
-
-
-
-
-
 
 .card-img {
-
-
     width: 100%;
-
-
     height: 220px;
-
-
     object-fit: cover;
-
-
     display: block;
-
-
 }
-
-
-
-
 
 .card-body {
-
-
     padding: 16px;
-
-
     display: grid;
-
-
     gap: 10px;
-
-
 }
-
-
-
-
 
 .card-title {
-
-
     margin: 0;
-
-
     font-size: clamp(17px, 2.2vw, 20px);
-
-
     line-height: 1.2;
-
-
 }
-
-
-
-
 
 .card-text {
-
-
     margin: 0;
-
-
     color: #c9c9c9;
-
-
 }
-
-
-
-
 
 .card-cta {
-
-
     margin-top: 8px;
-
-
     display: inline-flex;
-
-
     align-items: center;
-
-
     padding: 10px 14px;
-
-
     border-radius: 10px;
-
-
     border: 1px solid rgba(255, 255, 255, .15);
-
-
     color: #fff;
-
-
     text-decoration: none;
-
-
     cursor: pointer;
-
-
 }
 
-
-
-
-
 .card-cta:hover {
-
-
     color: #ffe000;
+}
 
+footer {
+    height: 400px;
+    width: 100%;
+    border: rgba(255, 255, 255, 0.15) 1px solid;
+    margin-top: 100px;
+    background-color: black;
+}
+
+#footer-div {
+    display: flex;
+    flex-flow: row;
+    flex: 1 0 0;
+    place-content: flex-start space-between;
+    align-items: flex-start;
+    padding: 24px;
+    margin: 40px auto;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+}
+
+#footer-div div{
+    max-width: 300px;
+}
+
+#contact-div{
+    flex-direction: column;
+    gap: 8px;
 }
