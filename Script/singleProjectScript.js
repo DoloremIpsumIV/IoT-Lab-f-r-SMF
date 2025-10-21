@@ -10,7 +10,7 @@ async function displayProject() {
 
     titleElement.innerText = project["company"];
     descriptionElement.innerText = project["full-description"];
-    heroImgElement.src = project.image;
+    heroImgElement.src = project.image + ".jpg";
     heroImgElement.alt = "bild på " + project.company;
     console.log(project);
 
