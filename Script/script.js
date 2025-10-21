@@ -15,15 +15,19 @@ async function displayDescriptions() {
             var title = document.createElement("h1");
             var img = document.createElement("img");
             var description = document.createElement("p");
+            var button = document.createElement("a");
 
             title.innerText = pilotCaseObj.company;
             img.src = pilotCaseObj.image;
             img.alt = "bild på " + pilotCaseObj.company;
             description.innerText = pilotCaseObj["brief-description"];
+            button.innerText = "Läs mer om Pilotcase";
+            button.href = `../Pages/clicked-project/${pilotCaseObj.company}.html`
 
             container.appendChild(title);
             container.appendChild(img);
             container.appendChild(description);
+            container.appendChild(button);
             currentProject++;
         }
     }

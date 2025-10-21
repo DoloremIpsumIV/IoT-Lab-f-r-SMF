@@ -116,8 +116,7 @@ function searchProjects(query) {
     if (!query.trim()) {
         return [];
     }
-    console.log(query);
-    
+
     var searchTerm = query.toLowerCase();
     return projectsData.filter(project => {
         return project.company.toLowerCase().includes(searchTerm);
@@ -129,7 +128,7 @@ function displaySearchResults(results) {
     boxes.forEach(box => {
         var containers = box.children;
         for (var container of containers) {
-            container.innerHTML = ""; 
+            container.innerHTML = "";
             container.style.display = "none";
         }
     });
@@ -146,7 +145,7 @@ function displaySearchResults(results) {
     }
 
     var currentResult = 0;
-    
+
     for (var box of boxes) {
         var boxContainers = box.children;
         for (var i = 0; i < boxContainers.length; i++) {
@@ -176,19 +175,29 @@ function displaySearchResults(results) {
 
 document.addEventListener("DOMContentLoaded", async () => {
     await fetchProjectsData();
-    await displayDescriptions(); 
+    await displayDescriptions();
 
+    var searchButton = document.getElementById("search-button");
     var searchInput = document.getElementById("search-input");
 
-    searchInput.addEventListener("input", (e) => {
-        var query = e.target.value;
-        console.log(e.data);
-        
-        if (!query.trim()) {
-            displayDescriptions();
-        } else {
-            var results = searchProjects(query);
-            displaySearchResults(results);
+    searchButton.addEventListener("click", () => {
+        startSearch();
+    });
+    searchInput.addEventListener("keypress", (e) => {
+
+        if (e.key === 'Enter') {
+            startSearch();
         }
     });
 });
+
+function startSearch() {
+    var searchInput = document.getElementById("search-input");
+    var query = searchInput.value;
+    if (!query.trim()) {
+        displayDescriptions();
+    } else {
+        var results = searchProjects(query);
+        displaySearchResults(results);
+    }
+}
