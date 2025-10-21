@@ -71,7 +71,7 @@ header {
     background-color: #000000;
     height: 95px;
     width: 100%;
-
+    z-index: 1;
 }
 
 nav {
@@ -651,7 +651,6 @@ body.projects .search-button {
     display: inline-flex;
     align-items: center;
     padding: 6px 12px 6px 12px;
-    width: 198px;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, .15);
     color: #fff;
