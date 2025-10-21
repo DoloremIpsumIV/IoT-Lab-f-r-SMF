@@ -122,28 +122,19 @@ button a {
     flex-flow: row;
     flex: 1 0 0;
     place-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 48px;
     width: 100%;
     padding: 0;
     display: flex;
     position: relative;
-    z-index: -1;
+   
 }
 
 .item-container {
-    background-color: #26f;
-    flex: 1 0 0;
-    width: 432px;
-    height: 504px;
-    border-radius: 8px;
-    flex-wrap: wrap;
+   display: flex;
 }
 
-.item-container img {
-    width: 430px;
-    height: 250px;
-}
 
 #navigation-bar {
     display: flex;
