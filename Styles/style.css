@@ -93,7 +93,6 @@ nav::after {
 }
 
 nav a:hover {
-    color: #ffe000;
     cursor: pointer;
 }
 
@@ -180,7 +179,6 @@ button a {
     max-width: 1440px;
     width: 552px;
     height: 330px;
-    outline: solid white 1px;
 }
 
 #body-grid-header {
@@ -316,6 +314,7 @@ button a {
 .cta-header {
     text-align: center;
     display: grid;
+    position: initial;
     gap: 12px;
     margin-bottom: 180px;
 }
@@ -396,11 +395,11 @@ button a {
     width: 100%;
     box-sizing: border-box;
     min-height: 48px;
-    padding: 12px 16px;
+    padding: 12px;
     border: 1px solid #2a2a2a;
-    border-radius: 10px;
+    border-radius: 4px;
     background: #191919;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .form-card input::placeholder,
@@ -420,13 +419,14 @@ button a {
 
 .form-card button[type="submit"] {
     width: 100%;
-    height: 52px;
+    height: 40px;
     border: none;
-    border-radius: 10px;
+    border-radius: 4px;
     background: #ffe000;
     color: #000;
-    font-weight: 700;
+    font-weight: 400;
     cursor: pointer;
+    font-size: 14px;
 }
 
 .form-card button[type="submit"]:hover {
@@ -478,7 +478,6 @@ body.projects #hero h1 {
 }
 
 body.projects #hero p {
-    color: #c9c9c9;
     max-width: 720px;
     margin: 0 auto;
 }
@@ -664,11 +663,13 @@ body.projects .search-button {
 }
 
 footer {
+    margin-bottom: 24px;
     height: 400px;
     width: 100%;
     border: rgba(255, 255, 255, 0.15) 1px solid;
-    margin-top: 100px;
-    background-color: black;
+    background-color: rgba(255, 255, 255, 0.05);
+    margin-top: -140px;
+    border-radius: 12px;
 }
 
 #footer-div {
@@ -684,11 +685,22 @@ footer {
     font-size: 14px;
 }
 
-#footer-div div{
+#footer-div div {
     max-width: 300px;
 }
 
-#contact-div{
+#footer-div div p {
+    font-size: 14px;
+    display: flex;
+    justify-content: left;
+    gap: 4px;
+}
+
+#footer-div div p a {
+    font-size: 16px;
+}
+
+#contact-div {
     flex-direction: column;
     gap: 8px;
 }
