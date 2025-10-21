@@ -27,55 +27,49 @@ main {
     align-content: center;
     align-items: center;
     margin: 160px 0 160px 0;
-    padding: 24px;
 }
 
 h1 {
-    font-size: clamp(28px, calc(28px + (42 - 28) * (100vw - 320px) / (1440 - 320)), 42px);
+    font-size: clamp(42px, calc(42px + (42 - 28) * (100vw - 320px) / (1440 - 320)), 42px);
     line-height: 1;
+    font-weight: 600;
+    color: white;
+    letter-spacing: -0.5px;
 }
 
 h2 {
-    font-size: clamp(20px, calc(20px + (26 - 20) * (100vw - 320px) / (1440 - 320)), 26px);
+    font-size: clamp(26px, calc(26px + (26 - 20) * (100vw - 320px) / (1440 - 320)), 26px);
     line-height: 1.2;
+    font-weight: 600;
+    color: white;
 }
 
 h3 {
-    font-size: clamp(17px, calc(17px + (20 - 17) * (100vw - 320px) / (1440 - 320)), 20px);
+    font-size: clamp(20px, calc(20px + (20 - 17) * (100vw - 320px) / (1440 - 320)), 20px);
     line-height: 1.2;
+    font-weight: 500;
+    color: white;
 }
 
 p {
-    font-size: clamp(14px, calc(14px + (16 - 14) * (100vw - 320px) / (1440 - 320)), 16px);
+    font-size: clamp(16px, calc(16px + (16 - 14) * (100vw - 320px) / (1440 - 320)), 16px);
     line-height: 1.5;
-    color: #c9c9c9;
+    font-weight: 400;
 }
 
-body.pilot {
-    font-size: clamp(14px, calc(14px + (16 - 14) * (100vw - 320px) / (1440 - 320)), 16px);
-    line-height: 1.5;
+.p-black {
+    color: rgba(255, 255, 255, 0.5);
 }
 
-body.pilot h1 {
-    font-size: clamp(26px, calc(26px + (33 - 26) * (100vw - 320px) / (1440 - 320)), 33px);
-    line-height: 1;
-}
-
-body.pilot h2 {
-    font-size: clamp(20px, calc(20px + (26 - 20) * (100vw - 320px) / (1440 - 320)), 26px);
-    line-height: 1.2;
-}
-
-body.pilot h3 {
-    font-size: clamp(17px, calc(17px + (20 - 17) * (100vw - 320px) / (1440 - 320)), 20px);
-    line-height: 1.2;
+.p-gray {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 header {
     position: sticky;
     top: 0;
     background-color: #000000;
-    height: 100%;
+    height: 95px;
     width: 100%;
 
 }
@@ -83,17 +77,17 @@ header {
 nav {
     position: relative;
     z-index: 10000;
-    padding: 24px;
     max-width: 1440px;
     margin: 0 auto;
+    height: 95px;
 }
 
 nav::after {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 24px;
-    right: 24px;
+    left: 0px;
+    right: 0px;
     height: 1px;
     background: rgba(255, 255, 255, 0.15);
 }
@@ -134,11 +128,11 @@ button a {
     padding: 0;
     display: flex;
     position: relative;
-   
+
 }
 
 .item-container {
-   display: flex;
+    display: flex;
 }
 
 
@@ -146,7 +140,7 @@ button a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 0px;
+    height: 47, 5px;
     padding-top: 12px;
     padding-bottom: 12px;
     z-index: 10001;
@@ -158,10 +152,11 @@ button a {
     align-items: center;
 }
 
-#header-button {
-    background-color: #ffe000;
-    padding: 8px 16px;
+#rightside-nav-bar a {
+    text-decoration: none;
 }
+
+
 
 #search-input {
     color: black;
@@ -181,10 +176,6 @@ button a {
     max-width: 1440px;
 }
 
-#hero div {
-    width: 672px;
-}
-
 #hero-img {
     max-width: 1440px;
     width: 552px;
@@ -200,16 +191,55 @@ button a {
 }
 
 #body-grid {
-    margin: 160px;
+    margin: 130px;
     display: flex;
     flex: none;
     flex-flow: column;
     place-content: center;
-    gap: 48px;
+    gap: 36px;
     width: 100%;
     padding: 0;
     overflow: visible;
     max-width: 1440px;
+}
+
+#show-all-btn {
+    width: 157px;
+    height: 48px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 8px;
+}
+
+.button-text {
+    font-size: 14px;
+    color: black;
+    font-weight: regular;
+}
+
+.button-text-size {
+    font-size: 14px;
+}
+
+#download-btn {
+    width: 270px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: rgba(255, 255, 255, 0.30) 1px solid;
+    gap: 8px;
+    padding: 0px 16px;
+    border-radius: 8px;
+    margin-top: 24px;
+    max-width: fit-content;
+}
+
+#download-btn a {
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -278,7 +308,7 @@ button a {
 
 #interest {
     width: 100%;
-    margin: 160px 0 0;
+    margin: 110px 0 0;
     scroll-margin-top: 96px;
 }
 
@@ -287,19 +317,20 @@ button a {
     text-align: center;
     display: grid;
     gap: 12px;
-    margin-bottom: 24px;
+    margin-bottom: 180px;
 }
 
 .cta-lead {
-    color: #c9c9c9;
-    max-width: 720px;
+    color: rgba(255, 255, 255, 0.5);
+    max-width: 672px;
     margin: 0 auto;
+    margin-top: -25px;
 }
 
 
 .cta-actions {
     display: flex;
-    gap: 16px;
+    gap: 24px;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 12px;
@@ -316,15 +347,11 @@ button a {
     border: 1px solid rgba(255, 255, 255, .15);
     background: transparent;
     color: inherit;
-    transition: transform .15s ease, border-color .15s ease;
 }
 
 .btn:hover {
-    transform: translateY(-1px);
     border-color: #ffe000;
 }
-
-.btn-outline {}
 
 
 .form-card {
@@ -356,8 +383,10 @@ button a {
 }
 
 .form-card label {
-    color: #d6d6d6;
+    color: rgba(255, 255, 255, 0.5);
+    ;
     font-weight: 600;
+    font-size: 12px;
 }
 
 
@@ -473,6 +502,7 @@ body.projects .search-container {
     justify-content: center;
     margin-top: 48px;
 }
+
 body.projects #search-input {
     width: min(285px, 72vw);
     height: 35px;
@@ -483,15 +513,19 @@ body.projects #search-input {
     color: #fff;
     outline: none;
 }
-body.projects #search-input::placeholder{ color:#8d8d8d; }
-body.projects #search-input:focus{
-    border-color:#ffe000;
-    box-shadow: 0 0 0 3px rgba(255,224,0,.15);
+
+body.projects #search-input::placeholder {
+    color: #8d8d8d;
 }
+
+body.projects #search-input:focus {
+    border-color: #ffe000;
+    box-shadow: 0 0 0 3px rgba(255, 224, 0, .15);
+}
+
 body.projects .search-button {
     height: 35px;
     width: 85px;
-    
     border-radius: 999px;
     border: none;
     background: #ffe000;
@@ -504,8 +538,32 @@ body.projects .search-button {
     border: 1px solid #ffe000;
 }
 
+#header-button {
+    background-color: #ffe000;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 8px;
+}
+
+#hero-text {
+    width: 680px;
+}
+
+
+#hero-text h1 {
+    margin-bottom: -2px;
+    margin-top: -2px;
+}
+
+#read-more-btn {
+    gap: 5px;
+    margin-top: -1px;
+}
+
 /* Projektkort design */
-.item-box{
+.item-box {
     flex-wrap: wrap;
 }
 
@@ -518,22 +576,26 @@ body.projects .search-button {
     .item-box {
         gap: 24px;
     }
+
     .item-container {
         flex-basis: calc((100% - 24px)/2);
     }
 }
-@media (max-width:750px){
-  .item-container { flex-basis: 100%; }
+
+@media (max-width:750px) {
+    .item-container {
+        flex-basis: 100%;
+    }
 }
 
-.card{
+.card {
     display: grid;
     grid-template-rows: auto 1fr;
-    background:#0b0b0b;
-    border:1px solid rgba(93,79,177,1.0);
-    border-radius:12px;
-    overflow:hidden;
-    height:100%;
+    background: #0b0b0b;
+    border: 1px solid rgba(93, 79, 177, 1.0);
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
     transition: transform .45s ease, border-color .15s ease, box-shadow .15s ease;
     position: relative;
     cursor: pointer;
@@ -541,57 +603,63 @@ body.projects .search-button {
     will-change: transform;
 }
 
-.card:focus-visible{
-  outline: 2px solid rgba(93,79,177,1.0);
-  outline-offset: 2px;
+.card:focus-visible {
+    outline: 2px solid rgba(93, 79, 177, 1.0);
+    outline-offset: 2px;
 }
 
-.card:hover, .card:focus-within{
-  transform: scale(1.025);
-  border-color: rgba(93,79,177,1.0);
+.card:hover,
+.card:focus-within {
+    transform: scale(1.025);
+    border-color: rgba(93, 79, 177, 1.0);
 }
+
 .card-img,
 .card-body,
 .card-title,
 .card-text,
-.card-cta{
+.card-cta {
     position: relative;
     z-index: 2;
 }
 
-
-.card-img{
+.card-img {
     width: 100%;
     height: 240px;
     object-fit: cover;
     display: block;
 }
 
+<<<<<<< HEAD
 .card-body{
     padding: 12px;
+=======
+.card-body {
+    padding: 16px;
+>>>>>>> 07c6b055d2903814725aadedead1f4223eee4ffa
     display: grid;
     gap: 10px;
 }
 
-.card-title{
+.card-title {
     margin: 0;
-    font-size: clamp(17px,2.2vw,20px);
+    font-size: clamp(17px, 2.2vw, 20px);
     line-height: 1.2;
 }
 
-.card-text{
+.card-text {
     margin: 0;
     color: #c9c9c9;
 }
 
-.card-cta{
+.card-cta {
     margin-top: 8px;
     display: inline-flex;
     align-items: center;
     padding: 6px 12px 6px 12px;
     width: 198px;
     border-radius: 10px;
-    border: 1px solid rgba(255,255,255,.15);
+    border: 1px solid rgba(255, 255, 255, .15);
     color: #fff;
     text-decoration: none;
     cursor: pointer;
@@ -599,8 +667,42 @@ body.projects .search-button {
     gap: 8px;
 }
 
+<<<<<<< HEAD
 
 
 .card-cta:hover{
+=======
+.card-cta:hover {
+>>>>>>> 07c6b055d2903814725aadedead1f4223eee4ffa
     color: #ffe000;
+}
+
+footer {
+    height: 400px;
+    width: 100%;
+    border: rgba(255, 255, 255, 0.15) 1px solid;
+    margin-top: 100px;
+    background-color: black;
+}
+
+#footer-div {
+    display: flex;
+    flex-flow: row;
+    flex: 1 0 0;
+    place-content: flex-start space-between;
+    align-items: flex-start;
+    padding: 24px;
+    margin: 40px auto;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+}
+
+#footer-div div{
+    max-width: 300px;
+}
+
+#contact-div{
+    flex-direction: column;
+    gap: 8px;
 }
