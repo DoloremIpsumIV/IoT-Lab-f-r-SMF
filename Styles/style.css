@@ -561,15 +561,30 @@ body.projects .search-button {
     margin-top: -1px;
 }
 
-/* Projektkort design */
-.item-box {
-    flex-wrap: wrap;
+
+.item-box{
+  flex-wrap: wrap;
+  gap: 48px;
+  justify-content: flex-start;   
 }
 
+
 .item-container {
-    flex: 1 1 calc((100% - 96px)/3);
-    min-width: 260px;
+  flex: 0 1 calc((100% - 96px) / 3);  
+  min-width: 260px;
 }
+
+
+@media (max-width: 1100px) {
+  .item-box { gap: 24px; }
+  .item-container { flex: 0 1 calc((100% - 24px) / 2); }
+}
+
+
+@media (max-width: 750px) {
+  .item-container { flex: 0 1 100%; }
+}
+
 
 @media (max-width: 1100px) {
     .item-box {
@@ -656,7 +671,7 @@ body.projects .search-button {
     color: #fff;
     text-decoration: none;
     cursor: pointer;
-    position: relative; 
+    position: relative;
     gap: 8px;
 }
 
@@ -705,4 +720,120 @@ footer {
 #contact-div {
     flex-direction: column;
     gap: 8px;
+}
+
+/* ——— Enskild projektsida ——— */
+body.single main {
+    margin-top: 120px;
+}
+
+#single-hero {
+    width: 100%;
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 48px;
+    align-items: start;
+    padding: 0 24px;
+}
+
+@media (max-width: 900px) {
+    #single-hero {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+.eyebrow {
+    color: #c9c9c9;
+    letter-spacing: .08em;
+    text-transform: none;
+    margin: 0 0 8px 0;
+}
+
+.single-hero-left h1 {
+    margin: 0;
+    font-size: clamp(36px, 6vw, 56px);
+    line-height: 1.05;
+}
+
+.single-hero-right h3 {
+    margin: 0 0 8px 0;
+    font-weight: 700;
+}
+
+.single-hero-right p {
+    margin: 0 0 24px 0;
+    color: #c9c9c9;
+    max-width: 720px;
+}
+
+
+.people-row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.person .avatar-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    object-fit: cover;
+    background: #111;
+    border: 1px solid rgba(255, 255, 255, .08);
+    display: inline-block;
+}
+
+.person .avatar-fallback {
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, #1f1f1f, #0f0f0f);
+    border: 1px solid rgba(255, 255, 255, .08);
+    display: inline-block;
+}
+
+.person .meta {
+    line-height: 1.1;
+}
+
+.person .name {
+    font-weight: 600;
+}
+
+.person .role {
+    font-size: 12px;
+    color: #8d8d8d;
+}
+
+
+.section-divider {
+    width: 100%;
+    max-width: 1440px;
+    border: none;
+    height: 1px;
+    background: rgba(255, 255, 255, .12);
+    margin: 24px 0 0 0;
+}
+
+
+#project-photo {
+    margin: 24px 0;
+    align-self: flex-start;
+}
+
+#project-photo img {
+    width: 672px;
+    height: 504px;
+    display: block;
+    border-radius: 12px;
 }

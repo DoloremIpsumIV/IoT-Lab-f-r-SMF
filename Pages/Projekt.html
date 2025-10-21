@@ -62,7 +62,7 @@
         <div id="body-grid">
             <div id="body-grid-header">
                 <h2>
-                    Utvalda Projekt
+                    Alla Projekt
                 </h2>
                 <button id="show-all-btn">
                     <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -233,44 +233,42 @@
                 </div>
             </header>
 
-            <form class="form-card" action="#" method="post" novalidate>
-                <div class="form-grid">
-                    <div class="form-row">
-                        <label for="name">Namn*</label>
-                        <input id="name" name="name" type="text" placeholder="Jane Smith" required />
+               <form id="emailForm" class="form-card" action="#" method="post">
+                    <div class="form-grid">
+                        <div class="form-row">
+                            <label for="nameInput">Namn*</label>
+                            <input id="nameInput" name="name" type="text" placeholder="Jane Smith" required />
+                        </div>
+                        <div class="form-row">
+                            <label for="companyInput">Företagsnamn*</label>
+                            <input id="companyInput" name="company" type="text" placeholder="IoT-Lab" required />
+                        </div>
                     </div>
-                    <div class="form-row">
-                        <label for="company">Företagsnamn*</label>
-                        <input id="company" name="company" type="text" placeholder="IoT-Lab" required />
+
+                    <div class="form-grid">
+                        <div class="form-row">
+                            <label for="emailInput">Email*</label>
+                            <input id="emailInput" name="email" type="email" placeholder="john@doe.com" required />
+                        </div>
+                        <div class="form-row">
+                            <label for="interestType">Jag är intresserad av följande*</label>
+                            <select id="interestType" name="interest" required>
+                                <option value="">Välj ett alternativ…</option>
+                                <option>Vägledningsdiskussion</option>
+                                <option>Inspirationsföreläsning</option>
+                                <option>Öppen workshop</option>
+                                <option>Fördjupad föreläsning</option>
+                                <option>Fördjupad workshop</option>
+                                <option>Pilotcase</option>
+                                <option>Affärsmodeller inom IoT</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-grid">
                     <div class="form-row">
-                        <label for="email">Email*</label>
-                        <input id="email" name="email" type="email" placeholder="john@doe.com" required />
+                        <button id="sendListBtn" type="submit">Skicka in</button>
                     </div>
-                    <div class="form-row">
-
-                        <label for="interestType">Jag är intresserad av följande*</label>
-                        <select id="interestType" name="interest" required>
-                            <option value="">Välj ett alternativ…</option>
-                            <option>Vägledningsdiskussion</option>
-                            <option>Inspirationsföreläsning</option>
-                            <option>Öppen workshop</option>
-                            <option>Fördjupad föreläsning</option>
-                            <option>Fördjupad workshop</option>
-                            <option>Pilotcase</option>
-                            <option>Affärsmodeller inom IoT</option>
-
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <button type="submit">Skicka in</button>
-                </div>
-            </form>
+                </form>
         </section>
         </div>
         
@@ -355,6 +353,7 @@
         </div>
     </footer>
     <script src="../Script/projectScript.js"></script>
+    <script src="../Script/formScript.js"></script>
 
 </body>
 

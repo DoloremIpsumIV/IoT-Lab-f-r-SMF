@@ -10,12 +10,28 @@ async function displayProject() {
 
     titleElement.innerText = project["company"];
     descriptionElement.innerText = project["full-description"];
+
+ var src = project.image;
+  if (!/\.(png|jpe?g|webp|gif)$/i.test(src)) {
+    src = src + ".jpg";
+  }
+
     heroImgElement.src = project.image + ".jpg";
     heroImgElement.alt = "bild på " + project.company;
     console.log(project);
 
+    
+ heroImgElement.onerror = function () {
+    console.warn("Hittade inte bild:", heroImgElement.src);
+    heroImgElement.src = "../Images/placeholder.jpg";
 
+    
+  };
 }
+
+
+
+
 
 async function fetchPilotCaseById(id) {
     try {
