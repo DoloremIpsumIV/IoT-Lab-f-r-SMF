@@ -55,10 +55,6 @@ function buildCard(p) {
     return card;
 }
 
-
-
-
-
 async function displayDescriptions() {
     var boxes = document.querySelectorAll(".item-box");
     var projectAmount = await fetchPilotCaseAmount();

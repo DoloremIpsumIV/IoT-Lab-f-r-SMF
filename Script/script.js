@@ -122,3 +122,13 @@ async function fetchPilotCaseAmount() {
 }
 
 document.addEventListener("DOMContentLoaded", displayDescriptions)
+
+document.addEventListener("DOMContentLoaded", function () {
+    var showAllButton = document.getElementById("show-all-btn");
+    showAllButton.style.cursor = "pointer";
+    showAllButton.addEventListener("click", function () {
+        window.location.href = "../Pages/Projekt.html";
+    });
+
+
+});
