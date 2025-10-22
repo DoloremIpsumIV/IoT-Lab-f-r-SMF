@@ -62,20 +62,25 @@ async function displayDescriptions() {
     var boxes = document.querySelectorAll(".item-box");
     var projectAmount = await fetchPilotCaseAmount();
     var currentProject = 0;
+    var selectedPilotcases = [2, 1, 29, 6, 9, 7, 13, 5, 3];
 
     for (var box of boxes) {
         var boxContainers = box.children;
         for (var i = 0; i < boxContainers.length; i++) {
-            if (currentProject >= projectAmount) break;
+            if (currentProject >= 9) break;
 
             var container = boxContainers[i];
-            var pilotCaseObj = await fetchPilotCaseById(currentProject + 1);
+            var pilotCaseObj = await fetchPilotCaseById(selectedPilotcases[i]);
 
             var card = buildCard(pilotCaseObj);
             container.appendChild(card);
 
             currentProject++;
         }
+        selectedPilotcases.shift();
+        selectedPilotcases.shift();
+        selectedPilotcases.shift();
+        // THIS IS SO FUCKING SCUFFED PLEASE FIX LATER OH MY GOD
     }
 }
 
