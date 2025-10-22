@@ -130,10 +130,17 @@ document.addEventListener("DOMContentLoaded", displayDescriptions)
 
 document.addEventListener("DOMContentLoaded", function () {
     var showAllButton = document.getElementById("show-all-btn");
+    var showAllButton2 = document.querySelector(".btn2");
+    
+
     showAllButton.style.cursor = "pointer";
     showAllButton.addEventListener("click", function () {
         window.location.href = "../Pages/Projekt.html";
     });
 
-
+    showAllButton2.style.cursor = "pointer";
+    showAllButton2.addEventListener("click", function () {
+        window.location.href = "../Pages/Projekt.html";
+    });
+    
 });
