@@ -859,3 +859,12 @@ body.single main {
     transform: translateY(-50%);
     pointer-events: none;
 }
+
+#about-iot-text {
+    display: inline !important;
+}
+
+.a-gray {
+    font-size: 14px !important;
+    color: rgba(255, 255, 255, 0.7);
+}

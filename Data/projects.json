@@ -3,231 +3,231 @@
         {
             "id": 1,
             "company": "PetwellTech",
-            "brief-description": "I detta pilotcase har vi undersökt hur sensorer kan användas för att detektera aceton i luften, för att om möjligt kunna ta ytterligare steg.",
+            "brief-description": "Detektera aceton i luften med sensorer.",
             "full-description": "PetwellTech är ett nystartat företag som vill utveckla sensorteknik för att övervaka husdjurs hälsa. I detta pilotcase har vi undersökt hur sensorer kan användas för att detektera aceton i luften, för att om möjligt kunna ta ytterligare steg. Detta case visade sig innehålla många utmaningar men genom samverkan mellan forskare, studenter och företaget har vi utforskat olika möjligheter.",
             "image": "../Images/1"
         },
         {
             "id": 2,
             "company": "SensIoT",
-            "brief-description": "Tillsammans med SensIoT, Wexiödisk och Jemac har vi utforskat en lösning som gör det möjligt att även inkludera antalet personer som exempelvis ätit lunch.",
+            "brief-description": "Mäta och rapportera matsvinn.",
             "full-description": "SensIoT skapar hållbara och lönsamma affärslösningar med hjälp av IoT, programmering och kommunikation. Deras digitala plattform Swill förenklar mätning, kategorisering och rapportering av matsvinn. Tillsammans med SensIoT, Wexiödisk och Jemac har vi utforskat en lösning som gör det möjligt att även inkludera antalet personer som exempelvis ätit lunch. Syftet är att vidareutveckla plattformen och ge ännu bättre underlag för att analysera och minska matsvinn.",
             "image": "../Images/2"
         },
         {
             "id": 3,
             "company": "AmiLu",
-            "brief-description": "Tillsammans med företaget AmiLu har vi utforskat en specifik komponent inom ramen för en större produkt.",
+            "brief-description": "Analysera spårbara enheter.",
             "full-description": "Tillsammans med företaget AmiLu har vi utforskat en specifik komponent inom ramen för en större produkt. Fokus har legat på att analysera olika spårbara enheter och utvärdera parametrar som laddning, batteritid och möjligheten till realtidsuppdatering.",
             "image": "../Images/3"
         },
         {
             "id": 4,
             "company": "Skoex",
-            "brief-description": "För att säkerställa att stolpen alltid är på rätt plats har Thomas Karlsson tillsammans med studenter undersökt tekniska lösningar för att skicka signal om stolpen flyttas.",
+            "brief-description": "Signal när säkerhetsstolpe flyttas.",
             "full-description": "Thomas Karlsson, ägare av Skoex har utvecklat en säkerhetsstolpe som används för att blockera dörrar vid till exempel PDV-attacker (pågående dödligt våld). För att säkerställa att stolpen alltid är på rätt plats har han, tillsammans med några av våra studenter, undersökt olika tekniska lösningar för att kunna skicka en signal om stolpen flyttas.",
             "image": "../Images/4"
         },
         {
             "id": 5,
             "company": "Getnö - Lake Åsnen Resort",
-            "brief-description": "Inom ramen för pilotcaset har vi kopplat upp elmätare i deras stugor, vilket möjliggör debitering baserad på individuell elförbrukning.",
+            "brief-description": "Elmätare i stugor för debitering.",
             "full-description": "Getnö – Lake Åsnen Resort är en naturcamping belägen mitt i sjön Åsnen, som erbjuder camping, konferenser, teambuilding och naturupplevelser. Inom ramen för pilotcaset har vi kopplat upp elmätare i deras stugor, vilket möjliggör debitering baserad på individuell elförbrukning. Detta för att effektiviserat hanteringen av energikostnader och uppföljning av förbrukning.",
             "image": "../Images/5"
         },
         {
             "id": 6,
             "company": "Hasselö Skärgårdsupplevelse",
-            "brief-description": "I pilotcaset har vi installerat sensorer för att mäta vattentemperaturen för badgäster och förbättrat övervakningen av kyl- och frysar.",
+            "brief-description": "Sensorer för vattentemperatur och kylskåp.",
             "full-description": "Hasselö Skärgårdsupplevelse omfattar flera verksamheter på ön Hasselö i Västerviks skärgård. Ön saknar fast förbindelse till fastlandet men är ett uppskattat besöksmål. I pilotcaset har vi installerat sensorer för att mäta vattentemperaturen för att badgästerna ska veta badtemperaturen. Vi har även förbättrat övervakningen av deras kyl- och frysar, så att företagaren larmas om temperaturen blir för hög. På så sätt kan de undvika att livsmedelsprodukter blir dåliga.",
             "image": "../Images/6"
         },
         {
             "id": 7,
             "company": "Neurawave",
-            "brief-description": "Samarbetet har fokuserat på att ta fram en pilotversion av den hårdvara som ingår i deras produkt för migränbehandling.",
+            "brief-description": "Hårdvara för migränbehandling.",
             "full-description": "Neurawave är ett nystartat företag som utvecklar en appstyrd lösning för att behandla och förebygga migrän. Samarbetet har fokuserat på att ta fram en pilotversion av den hårdvara som ingår i deras produkt. Tillsammans har vi arbetat för att versionen ska bidra till att de kan ta ytterligare steg på utvecklingen till en färdig produkt.",
             "image": "../Images/7"
         },
         {
             "id": 8,
             "company": "Radicair",
-            "brief-description": "Inom projektet har vi implementerat en konceptversion av ett IoT-system som kopplar fläkten till andra sensorer för automatisk styrning.",
+            "brief-description": "IoT-system för radonventilation.",
             "full-description": "Radicair utvecklar en fläkt som kan reglera radonhalten i inomhusluft. Inom projektet har vi implementerat en konceptversion av ett IoT-system som kopplar fläkten till andra sensorer och möjliggör automatisk och dynamisk styrning av ventilationssystemet.",
             "image": "../Images/8"
         },
         {
             "id": 9,
             "company": "Stufvenäs Gästgifveri",
-            "brief-description": "De har installerat en besöksräknare för att kartlägga hur ofta stigen används och vid vilka tidpunkter.",
+            "brief-description": "Besöksräknare för stiganvändning.",
             "full-description": "Stufvenäs Gästgifveri erbjuder hotell, spa och naturupplevelser. De anlade en ny stig till Stufvenäs eken och har nu installerat en besöksräknare för att kartlägga hur ofta stigen används och vid vilka tidpunkter.",
             "image": "../Images/9"
         },
         {
             "id": 10,
             "company": "Stenugnsbageriet Olof",
-            "brief-description": "Inom ramarna för pilotcaset har vi tittat på sensorer för kyl- och frysskåp, schemaläggning av ugnar och nya funktioner till kassasystemet.",
+            "brief-description": "Sensorer för bageriets utrustning.",
             "full-description": "Stenugnsbageriet Olof är ett bageri på Öland. De ville hitta sensorer för att kontrollera så att deras kyl- och frysskåp är ordentligt stängda. Inom ramarna för pilotcaset har vi tillsammans även tittat på möjligheten att schemalägga att ugnen startas varje morgon samt formulera ett önskemål om nya funktioner till det befintliga kassasystemet.",
             "image": "../Images/10"
         },
         {
             "id": 11,
             "company": "Jemac",
-            "brief-description": "Tillsammans med IoT-gänget har man utforskat vilka givare som kan användas för att mäta i och runt poddarna för att exempelvis mäta luftkvalité, temperatur, ljudvolym samt hur podden används.",
+            "brief-description": "Mäta miljö i ljudisolerade poddar.",
             "full-description": "Jemac arbetar med helheten kring ”a thing” som man av olika anledningar vill koppla upp. De har ett samarbete med ett företag som tillverkar ljudisolerade poddar för till exempel flygplatser och kontor. Tillsammans med IoT-gänget har man utforskat vilka givare som kan användas för att mäta i och runt poddarna för att exempelvis mäta luftkvalité, temperatur, ljudvolym samt hur podden används.",
             "image": "../Images/11"
         },
         {
             "id": 12,
             "company": "Elektroverkstaden",
-            "brief-description": "Under tiden som pilotcase har vi undersökt möjligheten att använda sensorer för att veta när underhåll behövs samt hur man ska skicka data från sensorerna.",
+            "brief-description": "Sensorer för vattenpumpsunderhåll.",
             "full-description": "Elektroverkstaden tillhandahåller vattenpumpar som är placerade på svåråtkomliga platser. I dagsläget åker man ut och inspekterar dem regelbundet eftersom det är omöjligt att veta om de behöver underhåll utan att vara på plats. Under tiden som pilotcase har vi undersökt möjligheten att använda sensorer för att veta när underhåll behövs samt hur man ska skicka data från sensorerna.",
             "image": "../Images/12"
         },
         {
             "id": 13,
             "company": "Novacore",
-            "brief-description": "Pilotcaset har fokuserat på att mäta klimatet i deras förvaringslokaler.",
+            "brief-description": "Mäta klimat i förvaringslokaler.",
             "full-description": "Novacore tillverkar olika typer av emballage. Vissa emballage är gjorda i papper och kartong, vilket lätt kan bli förstört om de förvaras i fel förhållanden, därför har pilotcaset fokuserat på att mäta klimatet i deras förvaringslokaler.",
             "image": "../Images/13"
         },
         {
             "id": 14,
             "company": "ETEC",
-            "brief-description": "Det de ville ha stöttning med var att sortera och visualisera den data som samlats in från sensorerna på ett tillgängligt och lämpligt sätt.",
+            "brief-description": "Visualisera sensordata.",
             "full-description": "ETEC driver teknikutbildningar och har redan idag ett ekosystem av olika sensorer. Det de ville ha stöttning med var att sortera och visualisera den data som samlats in från sensorerna på ett tillgängligt och lämpligt sätt.",
             "image": "../Images/14"
         },
         {
             "id": 15,
             "company": "C3C",
-            "brief-description": "Deras projekt har fokuserat på att utforska hur IoT och sensorer kan användas för att förbättra lagringen och hanteringen av biobränslen.",
+            "brief-description": "Förbättra lagring av biobränslen.",
             "full-description": "C3C är ett företaget som tillverkar betongblock av olika storlekar på olika orter runtom i Sverige. Dessa block används bland annat som stödmurar, materialfickor och lagerbyggnader inom återvinningsindustrin. Deras projekt har fokuserat på att utforska hur IoT och sensorer kan användas för att förbättra lagringen och hanteringen av biobränslen.",
             "image": "../Images/15"
         },
         {
             "id": 16,
             "company": "Astrid Lindgrens Värld",
-            "brief-description": "Ett av målen var att skapa en visuell presentation av data från stugorna så att receptionen kunde observera om det till exempel krävs ventilation i en stuga eller om temperaturen är för hög/låg.",
+            "brief-description": "Temperatur- och fuktighetssensorer i stugor.",
             "full-description": "Astrid Lindgrens Värld har under sin tid som pilotcase satt upp sensorer för att mäta temperatur och luftfuktighet i sina stugor. Ett av målen var att skapa en visuell presentation av data från stugorna så att receptionen kunde observera om det till exempel krävs ventilation i en stuga eller om temperaturen är för hög/låg.",
             "image": "../Images/16"
         },
         {
             "id": 17,
             "company": "Ölands köksmejeri",
-            "brief-description": "Pilotcaset har innefattat att titta på sensorer som kan bidra till planeringen av pastöriseringen under perioder med låga kostnader, programmering av olika ostrecept och larm i grytan.",
+            "brief-description": "Sensorer för osttillverkning.",
             "full-description": "Ölands köksmejeri arbetar med osttillverkning. Pilotcaset har innefattat att titta på sensorer som kan bidra till planeringen av pastöriseringen under perioder med låga kostnader, programmering av olika ostrecept och larm i grytan som övervakar viktiga värden som temperatur, tid och pH.",
             "image": "../Images/17"
         },
         {
             "id": 18,
             "company": "Kallskänken",
-            "brief-description": "Målet har varit att mäta temperatur, luftfuktighet, antal besökare och övervaka bullernivåerna i olika restauranglokaler.",
+            "brief-description": "Mäta miljö i restauranger.",
             "full-description": "Ägaren till Kallskänken och ett antal andra restauranger ville få en bättre överblick och förståelse för sina restauranger har pilotcaset utforskat användningen av LoRaWAN-nätverk och sensorer. Målet har varit att mäta temperatur, luftfuktighet, antal besökare och övervaka bullernivåerna i olika restauranglokaler.",
             "image": "../Images/18"
         },
         {
             "id": 19,
             "company": "Stens Chark AB",
-            "brief-description": "Under sitt pilotcase hjälpte labbet företaget att implementera IoT-sensorer för att mäta temperaturer och luftfuktighet i charkuteriproduktionen.",
+            "brief-description": "Sensorer i charkuteriproduktion.",
             "full-description": "Stens Chark AB producerade charkuteriprodukter och under sitt pilotcase hjälpte labbet företaget att implementera IoT-sensorer för att mäta temperaturer och luftfuktighet i charkuteriproduktionen, vilket bidrog till att optimera processer och minska kvalitetsproblem samt matsvinn.",
             "image": "../Images/19"
         },
         {
             "id": 20,
             "company": "Honestbox AB",
-            "brief-description": "Labbet stöttade företaget i utvecklingen av nästa generations hårdvara för obemannade butiker, genom att identifiera lämpliga firmware-uppdateringar och skapa resilienta uppkopplingar.",
+            "brief-description": "Hårdvara för obemannade butiker.",
             "full-description": "Honestbox AB hjälper verksamheter med lösningar för både obemannade butiker och för de som vill starta hybridbutiker. Labbet stöttade företaget i utvecklingen av nästa generations hårdvara för obemannade butiker, genom att identifiera lämpliga firmware-uppdateringar och skapa resilienta uppkopplingar med flera kommunikationsprotokoll.",
             "image": "../Images/20"
         },
         {
             "id": 21,
             "company": "Flowbic AB",
-            "brief-description": "Labbet stöttade dem i utvecklingen av hårdvara, sensorer och nätverksteknik kopplade till IoT-lösningar och utforskade nya möjligheter i samarbete med biologer.",
+            "brief-description": "Utveckla IoT-hårdvara och sensorer.",
             "full-description": "Flowbic AB stöttar andra företag i deras arbete med digitala lösningar. Labbet stöttade dem i utvecklingen av hårdvara, sensorer och nätverksteknik kopplade till IoT-lösningar och utforskade nya möjligheter i samarbete med biologer på Linnéuniversitetet.",
             "image": "../Images/21"
         },
         {
             "id": 22,
             "company": "Svenska Våg AB",
-            "brief-description": "Labbet arbetade med att ansluta befintliga vågsystem till internet, vilket möjliggjorde företaget att erbjuda nya IoT-baserade lösningar.",
+            "brief-description": "Ansluta vågsystem till internet.",
             "full-description": "Svenska Våg AB tillhör spetskompetensen inom vågbranschen och de arbetar med allt från vägning, vågkomponenter till avancerade vågsystem. Labbet arbetade med att ansluta befintliga vågsystem till internet, vilket möjliggjorde företaget att erbjuda nya IoT-baserade lösningar för att förbättra produktiviteten och sänka driftskostnaderna.",
             "image": "../Images/22"
         },
         {
             "id": 23,
             "company": "PM & Vänner",
-            "brief-description": "Labbet stöttade företaget i utvecklingen av en uppkopplad och digitaliserad process för mätning av matsvinn.",
+            "brief-description": "Digital mätning av matsvinn.",
             "full-description": "PM & Vänner är ett hotell med en gastronomisk restaurang som ville arbeta med att minska sitt matsvinn. Man hade ett system för att registrera matsvinnet, men det var krångligt vilket bidrog till att medarbetarna inte använde det. Labbet stöttade företaget i utvecklingen av en uppkopplad och digitaliserad process för mätning av matsvinn, vilket bidrog till att optimera verksamheten och uppnå företagets miljömål.",
             "image": "../Images/23"
         },
         {
             "id": 24,
             "company": "Beelab AB",
-            "brief-description": "Labbet stöttade Beelab att utveckla batteridrivna, energieffektiva system för biodling.",
+            "brief-description": "Energieffektiva system för biodling.",
             "full-description": "Beelab AB arbetar för att underlätta biodling med hjälp av teknik. Labbet stöttade Beelab att utveckla batteridrivna, energieffektiva system, vilket minskade energiförbrukningen och möjliggjorde en produkt som kan fungera trådlöst.",
             "image": "../Images/24"
         },
         {
             "id": 25,
             "company": "QTF Sweden AB",
-            "brief-description": "Under pilotcaset fick de stöttning med att utveckla kommunikation och mätning för befintlig utrustning genom IoT-teknik.",
+            "brief-description": "IoT för VVS-system.",
             "full-description": "QTF Sweden AB arbetar med att avgasa och rena systemvätskan i energisystem. Under sin tid som pilotcase fick de stöttning med att utveckla kommunikation och mätning för befintlig utrustning i VVS-system genom att implementera IoT-teknik och hitta rätt kommunikation och hårdvara. Detta bidrog till att deras underhållsarbete kunde utföras utifrån behov i stället för att göra det inom olika tidsramar.",
             "image": "../Images/25"
         },
         {
             "id": 26,
             "company": "Aquateq AB",
-            "brief-description": "I detta case kunde labbet bidra med att validera en produktidé för uppkopplad dysa för att skicka data om tryck och flöde.",
+            "brief-description": "Uppkopplad dysa för tryck och flöde.",
             "full-description": "Aquateq AB ville undersöka möjligheten att ha en uppkopplad dysa för att skicka data om tryck och flöde i spolmunstycken, i detta case kunde labbet bidra med att validera en produktidé för att se om det var värt att investera i det ytterligare eller ej.",
             "image": "../Images/26"
         },
         {
             "id": 27,
             "company": "TIVA",
-            "brief-description": "Labbet hjälpte TIVA att utveckla en solcellsdriven, energisnål IoT-sensor för att mäta vattennivån.",
+            "brief-description": "Sensor för vattennivå.",
             "full-description": "TIVA utvecklar tekniska produkter kopplade till vatten och miljöövervakning, bland annat fiskräkning. Labbet hjälpte TIVA att utveckla en solcellsdriven, energisnål IoT-sensor för att mäta vattennivån samt ge råd om kommunikationsprotokoll och hårdvara, vilket resulterade i en lyckad prototyp för vidare utveckling.",
             "image": "../Images/27"
         },
         {
             "id": 28,
             "company": "Adductor AB",
-            "brief-description": "Labbet stöttade Adductor i utvecklingen av en ny trådlös LoRaWAN-baserad produkt och integrationen i deras befintliga kodbas.",
+            "brief-description": "Trådlös LoRaWAN-produkt.",
             "full-description": "Adductor AB har lång erfarenhet av industri-elektronik och programmering och hjälper sina kunder med olika underhållsystem. Labbet stöttade Adductor i utvecklingen av en ny trådlös LoRaWAN-baserad produkt och integrationen av denna i deras befintliga kodbas, vilket bidrog till att förbättra deras kunders upplevelse och erbjuda en starkare lösning för industriella maskiner.",
             "image": "../Images/28"
         },
         {
             "id": 29,
             "company": "Sport Appeal",
-            "brief-description": "Nugående projekt med Sport Appeal som mäter styrka med hjälp av IMTP övningar och sensorer.",
+            "brief-description": "Mäta styrka med sensorer.",
             "full-description": "Tillsammans med Sport Appeal fokuserar vi på att utveckla ett system för att mäta styrka med hjälp av övningen Isometric Mid-thigh Pull (IMTP). En lastcellssensor används för att fånga kraften som utövas under draget. Denna data bearbetas sedan av en mikrokontroller, överförs trådlöst, lagras säkert i en databas och slutligen nås och visualiseras av användare genom en webb- eller mobilapplikation.",
             "image": "../Images/34"
         },
         {
             "id": 30,
             "company": "Eventcenter",
-            "brief-description": "Labbet hjälpte dem att utföra systematiska tester på flera sensorer och hitta en lösning för att förbättra upplevelsen i Twister-rummet.",
+            "brief-description": "Sensorer för aktivitetsrum.",
             "full-description": "Eventcenter driver en verksamhet där en del av konceptet är olika aktivitetsrum. Labbet hjälpte dem att utföra systematiska tester på flera sensorer och hitta en lösning för att förbättra upplevelsen i Twister-rummet, som tidigare hade tekniska problem med befintliga sensorer.",
             "image": "../Images/30"
         },
         {
             "id": 31,
             "company": "Job out",
-            "brief-description": "De ville utveckla en första prototyp för uppkopplade sitt- och stådynor för mätning av hur mycket personalen sitter eller står.",
+            "brief-description": "Uppkopplade sitt- och stådynor.",
             "full-description": "Job out är en del av företaget Burde, som fokuserar på att erbjuda produkter för en bättre arbetsmiljö. De ville utveckla en första prototyp för uppkopplade sitt- och stådynor för mätning av hur mycket personalen sitter eller står under arbetstiden.",
             "image": "../Images/31"
         },
         {
             "id": 32,
             "company": "Pure Bio Synergy (PBS)",
-            "brief-description": "PBS fick stöd med att utveckla en smart gateway som kommunicerar med internet för både mätning och styrning av deras ozongenerator.",
+            "brief-description": "Smart gateway för ozongenerator.",
             "full-description": "Pure Bio Synergy (PBS) fick stöd med att utveckla en smart gateway som kommunicerar med internet för både mätning och styrning av deras unika ozongenerator för vattenrening, vilket bidrog till att skapa en anpassningsbar och uppkopplad produkt.",
             "image": "../Images/32"
         },
         {
             "id": 33,
             "company": "Böda Sand",
-            "brief-description": "Böda Sand fick stöttning i val av hårdvara och med integrationen mot deras egna system för att digitalisera och mäta hur människor rör sig.",
+            "brief-description": "IoT-nätverk för camping.",
             "full-description": "Böda Sand är en camping på Öland som med hjälp av labbet byggde ut sitt IoT-nätverk. De fick även stöttning i val av hårdvara och med integrationen mot deras egna system för att digitalisera och mäta hur människor rör sig på deras områden. Man valde även att koppla upp ett flertal väderstationer för att få lokala väderdata.",
             "image": "../Images/33"
         }

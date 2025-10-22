@@ -1,14 +1,10 @@
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
-  var form     = document.getElementById("emailForm");
-  var nameEl   = document.getElementById("nameInput");
-  var compEl   = document.getElementById("companyInput");
-  var emailEl  = document.getElementById("emailInput");
+  var form = document.getElementById("emailForm");
+  var nameEl = document.getElementById("nameInput");
+  var compEl = document.getElementById("companyInput");
+  var emailEl = document.getElementById("emailInput");
   var interest = document.getElementById("interestType");
 
-  
   var RECIPIENT_EMAIL = "elin.gunnarsson@lnu.se";
 
   if (!form) return;
@@ -16,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-   
+
     if (!nameEl.value.trim() || !compEl.value.trim() || !emailEl.value.trim() || !interest.value.trim()) {
       alert("Fyll i alla obligatoriska fält.");
       return;
@@ -35,10 +31,10 @@ document.addEventListener("DOMContentLoaded", function () {
       "?subject=" + encodeURIComponent(subject) +
       "&body=" + encodeURIComponent(body);
 
-   
+
     window.location.href = mailtoLink;
 
-    
+
     form.reset();
   });
 });
