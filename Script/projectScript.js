@@ -66,13 +66,13 @@ async function fetchAllPilotCases() {
 
 
 async function displayDescriptions() {
-  var grid = document.getElementById("cards-grid");   
+  var grid = document.getElementById("cards-grid");
   if (!grid) return;
   grid.innerHTML = "";
 
   var all = await fetchAllPilotCases();
 
-  
+
   all.sort(function (a, b) { return a.id - b.id; });
 
   all.forEach(function (p) {
@@ -89,6 +89,58 @@ document.addEventListener("DOMContentLoaded", function () {
     showAllButton.style.cursor = "pointer";
     showAllButton.addEventListener("click", function () {
       window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+});
+
+function startSearch() {
+  var searchInput = document.getElementById('search-input');
+  var query = searchInput.value.toLowerCase().trim();
+
+  if (!query) {
+    displayDescriptions();
+    return;
+  }
+
+  displaySearchResults(query);
+}
+
+async function displaySearchResults(query) {
+  var grid = document.getElementById("cards-grid");
+  if (!grid) return;
+  grid.innerHTML = "";
+
+  var all = await fetchAllPilotCases();
+
+  var filtered = all.filter(p =>
+    p.company.toLowerCase().includes(query) ||
+    p["brief-description"].toLowerCase().includes(query)
+  );
+
+  filtered.sort((a, b) => a.id - b.id);
+
+  filtered.forEach(p => {
+    grid.appendChild(buildCard(p));
+  });
+
+  if (filtered.length === 0) {
+    grid.innerHTML = '<p class="no-results">Inga projekt matchade din sökning.</p>';
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  displayDescriptions().catch(console.error);
+
+  var searchButton = document.getElementById("search-button");
+  var searchInput = document.getElementById("search-input");
+
+  if (searchButton && searchInput) {
+    searchButton.addEventListener("click", startSearch);
+
+    searchInput.addEventListener("keypress", function (e) {
+      if (e.key === "Enter") {
+        startSearch();
+      }
     });
   }
 });
