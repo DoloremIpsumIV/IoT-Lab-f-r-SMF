@@ -60,7 +60,7 @@ function buildCard(p) {
 
 async function displayDescriptions() {
     var boxes = document.querySelectorAll(".item-box");
-    var selectedPilotCases = [2, 1, 29, 6, 9, 7, 13, 5, 3];
+    var selectedPilotCases = [6, 5, 16, 2, 7, 3];
     
     let currentProject = 0;
 
