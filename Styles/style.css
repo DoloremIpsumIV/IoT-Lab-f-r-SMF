@@ -18,7 +18,6 @@ body {
     padding: 0px 24px 0px 24px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 main {
@@ -96,8 +95,6 @@ nav a:hover {
     cursor: pointer;
 }
 
-
-
 button {
     height: fit-content;
     width: fit-content;
@@ -116,24 +113,6 @@ button a {
     color: black;
     text-decoration: none;
 }
-
-.item-box {
-    flex-flow: row;
-    flex: 1 0 0;
-    place-content: center;
-    align-items: stretch;
-    gap: 48px;
-    width: 100%;
-    padding: 0;
-    display: flex;
-    position: relative;
-
-}
-
-.item-container {
-    display: flex;
-}
-
 
 #navigation-bar {
     display: flex;
@@ -154,8 +133,6 @@ button a {
 #rightside-nav-bar a {
     text-decoration: none;
 }
-
-
 
 #search-input {
     color: black;
@@ -185,11 +162,10 @@ button a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 #body-grid {
-    margin: 130px;
+    margin: 96px 0;
     display: flex;
     flex: none;
     flex-flow: column;
@@ -240,27 +216,12 @@ button a {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 1100px) {
-
-    #body-grid {
-        gap: 24px;
-    }
-
-    .item-box {
-        gap: 24px;
-    }
-}
-
 @media only screen and (max-width: 1050px) {
     .removable {
         display: none;
     }
 
     #body-grid {
-        gap: 48px;
-    }
-
-    .item-box {
         gap: 48px;
     }
 }
@@ -284,32 +245,15 @@ button a {
     #hero img {
         width: 100%;
     }
-
-    .item-box {
-        flex-flow: column;
-    }
-
-    .item-container {
-        flex: unset;
-    }
 }
-
-@media only screen and (max-width: 450px) {
-    .item-container {
-        width: 100%;
-    }
-}
-
 
 /* Formulär */
-
 
 #interest {
     width: 100%;
     margin: 110px 0 0;
     scroll-margin-top: 96px;
 }
-
 
 .cta-header {
     text-align: center;
@@ -325,7 +269,6 @@ button a {
     margin: 0 auto;
     margin-top: -25px;
 }
-
 
 .cta-actions {
     display: flex;
@@ -352,7 +295,6 @@ button a {
     border-color: #ffe000;
 }
 
-
 .form-card {
     background: #0b0b0b;
     border: 1px solid rgba(255, 255, 255, .12);
@@ -364,17 +306,11 @@ button a {
     gap: 20px;
 }
 
-
 .form-grid {
     display: grid;
     grid-template-columns: 1fr !important;
     gap: 16px;
 }
-
-/*@media (min-width:900px){
-    .form-grid{ grid-template-columns:1fr 1fr; column-gap:16px; }
-  }*/
-
 
 .form-row {
     display: grid;
@@ -383,11 +319,9 @@ button a {
 
 .form-card label {
     color: rgba(255, 255, 255, 0.5);
-    ;
     font-weight: 600;
     font-size: 12px;
 }
-
 
 .form-card input,
 .form-card select,
@@ -407,7 +341,6 @@ button a {
     color: #8d8d8d;
 }
 
-
 .form-card input:focus,
 .form-card select:focus,
 .form-card textarea:focus {
@@ -415,7 +348,6 @@ button a {
     border-color: #ffe000;
     box-shadow: 0 0 0 3px rgba(255, 224, 0, .15);
 }
-
 
 .form-card button[type="submit"] {
     width: 100%;
@@ -437,11 +369,9 @@ button a {
     transform: translateY(1px);
 }
 
-
 .form-card * {
     background-clip: padding-box;
 }
-
 
 #header-button {
     background-color: #ffe000;
@@ -513,8 +443,6 @@ body.projects #search-input {
     outline: none;
 }
 
-
-
 body.projects #search-input::placeholder {
     color: #8d8d8d;
 }
@@ -552,7 +480,6 @@ body.projects .search-button {
     width: 680px;
 }
 
-
 #hero-text h1 {
     margin-bottom: -2px;
     margin-top: -2px;
@@ -563,64 +490,59 @@ body.projects .search-button {
     margin-top: -1px;
 }
 
+/* CARD GRID - CLEAN VERSION */
+.cards-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  align-items: start; /* hindrar att korten sträcks på höjden */
+}
+
+
 
 .item-box {
-    flex-wrap: wrap;
-    gap: 48px;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    width: 100%;
 }
-
 
 .item-container {
-    flex: 0 1 calc((100% - 96px) / 3);
-    min-width: 260px;
+    display: block;
+    min-width: 0;
 }
 
-
 @media (max-width: 1100px) {
+
+    .cards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .item-box {
         gap: 24px;
     }
-
-    .item-container {
-        flex: 0 1 calc((100% - 24px) / 2);
-    }
 }
-
 
 @media (max-width: 750px) {
-    .item-container {
-        flex: 0 1 100%;
+
+    .cards-grid {
+        grid-template-columns: 1fr;
     }
-}
-
-
-@media (max-width: 1100px) {
     .item-box {
-        gap: 24px;
-    }
-
-    .item-container {
-        flex-basis: calc((100% - 24px)/2);
+        grid-template-columns: 1fr;
     }
 }
 
-@media (max-width:750px) {
-    .item-container {
-        flex-basis: 100%;
-    }
-}
-
+/* CARD STYLES */
 .card {
-    display: grid;
-    grid-template-rows: auto 1fr;
+    display: flex;
+    flex-direction: column;
     background: #0b0b0b;
     border: 1px solid rgba(93, 79, 177, 1.0);
     border-radius: 12px;
     overflow: hidden;
     height: 100%;
     transition: transform .45s ease, border-color .15s ease, box-shadow .15s ease;
-    position: relative;
     cursor: pointer;
     transform-origin: center top;
     will-change: transform;
@@ -651,12 +573,15 @@ body.projects .search-button {
     height: 240px;
     object-fit: cover;
     display: block;
+    flex-shrink: 0;
 }
 
 .card-body {
     padding: 16px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
+    flex-grow: 1;
 }
 
 .card-title {
@@ -671,16 +596,16 @@ body.projects .search-button {
 }
 
 .card-cta {
-    margin-top: 8px;
+    margin-top: auto;
     display: inline-flex;
     align-items: center;
-    padding: 6px 12px 6px 12px;
+    padding: 6px 12px;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, .15);
     color: #fff;
     text-decoration: none;
     cursor: pointer;
-    position: relative;
+    width: fit-content;
     gap: 8px;
 }
 
@@ -777,7 +702,6 @@ body.single main {
     max-width: 720px;
 }
 
-
 .people-row {
     display: flex;
     align-items: center;
@@ -824,7 +748,6 @@ body.single main {
     color: #8d8d8d;
 }
 
-
 .section-divider {
     width: 100%;
     max-width: 1440px;
@@ -833,7 +756,6 @@ body.single main {
     background: rgba(255, 255, 255, .12);
     margin: 24px 0 0 0;
 }
-
 
 #project-photo {
     margin: 24px 0;
