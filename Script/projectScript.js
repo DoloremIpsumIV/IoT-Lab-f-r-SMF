@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function startSearch() {
-  var searchInput = document.getElementById('search-input');
+  var searchInput = document.getElementById("search-input");
   var query = searchInput.value.toLowerCase().trim();
 
   if (!query) {

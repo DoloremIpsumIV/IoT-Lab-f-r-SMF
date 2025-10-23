@@ -6,7 +6,11 @@
             "brief-description": "Detektera aceton i luften med sensorer.",
             "full-description": "PetwellTech är ett nystartat företag som vill utveckla sensorteknik för att övervaka husdjurs hälsa. I detta pilotcase har vi undersökt hur sensorer kan användas för att detektera aceton i luften, för att om möjligt kunna ta ytterligare steg. Detta case visade sig innehålla många utmaningar men genom samverkan mellan forskare, studenter och företaget har vi utforskat olika möjligheter.",
             "image": "../Images/1",
-            "media": [
+            "media": [    
+                {
+                    "type": "jpg",
+                    "source": "../Images/1/1.jpg"
+                },
                 {
                     "type": "png",
                     "source": "../Images/1/1.png"
@@ -36,6 +40,10 @@
             "full-description": "SensIoT skapar hållbara och lönsamma affärslösningar med hjälp av IoT, programmering och kommunikation. Deras digitala plattform Swill förenklar mätning, kategorisering och rapportering av matsvinn. Tillsammans med SensIoT, Wexiödisk och Jemac har vi utforskat en lösning som gör det möjligt att även inkludera antalet personer som exempelvis ätit lunch. Syftet är att vidareutveckla plattformen och ge ännu bättre underlag för att analysera och minska matsvinn.",
             "image": "../Images/2",
             "media": [
+                {
+                    "type": "jpg",
+                    "source": "../Images/2/1.jpg"
+                },
                 {
                     "type": "jpeg",
                     "source": "../Images/2/1.jpeg"
@@ -89,6 +97,10 @@
             "full-description": "Tillsammans med företaget AmiLu har vi utforskat en specifik komponent inom ramen för en större produkt. Fokus har legat på att analysera olika spårbara enheter och utvärdera parametrar som laddning, batteritid och möjligheten till realtidsuppdatering.",
             "image": "../Images/3",
             "media": [
+                {
+                    "type": "jpg",
+                    "source": "../Images/3/1.jpg"
+                },
                 {
                     "type": "png",
                     "source": "../Images/3/1.png"
@@ -150,6 +162,10 @@
             "image": "../Images/5",
             "media": [
                 {
+                    "type": "jpg",
+                    "source": "../Images/5/1.jpg"
+                },
+                {
                     "type": "jpeg",
                     "source": "../Images/5/1.jpeg"
                 },
@@ -199,6 +215,10 @@
             "image": "../Images/6",
             "media": [
                 {
+                    "type": "jpg",
+                    "source": "../Images/6/1.jpg"
+                },
+                {
                     "type": "jpeg",
                     "source": "../Images/6/1.jpeg"
                 },
@@ -243,6 +263,10 @@
             "full-description": "Neurawave är ett nystartat företag som utvecklar en appstyrd lösning för att behandla och förebygga migrän. Samarbetet har fokuserat på att ta fram en pilotversion av den hårdvara som ingår i deras produkt. Tillsammans har vi arbetat för att versionen ska bidra till att de kan ta ytterligare steg på utvecklingen till en färdig produkt.",
             "image": "../Images/7",
             "media": [
+                {
+                    "type": "jpg",
+                    "source": "../Images/7/1.jpg"
+                },
                 {
                     "type": "mp4",
                     "source": "../Images/7/1.mp4"
@@ -346,6 +370,10 @@
                 {
                     "type": "JPG",
                     "source": "../Images/13/10.JPG"
+                },
+                {
+                    "type": "jpg",
+                    "source": "../Images/13/11.JPG"
                 },
                 {
                     "type": "MOV",
