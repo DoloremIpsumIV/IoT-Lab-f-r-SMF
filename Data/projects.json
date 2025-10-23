@@ -158,48 +158,8 @@
                     "source": "../Images/5/2.HEIC"
                 },
                 {
-                    "type": "JPEG",
-                    "source": "../Images/5/1.JPEG"
-                },
-                {
-                    "type": "MOV",
-                    "source": "../Images/5/1.MOV"
-                },
-                {
-                    "type": "MOV",
-                    "source": "../Images/5/2.MOV"
-                },
-                {
-                    "type": "MOV",
-                    "source": "../Images/5/3.MOV"
-                },
-                {
-                    "type": "MOV",
-                    "source": "../Images/5/4.MOV"
-                },
-                {
-                    "type": "MOV",
-                    "source": "../Images/5/5.MOV"
-                },
-                {
-                    "type": "MOV",
-                    "source": "../Images/5/6.MOV"
-                },
-                {
-                    "type": "MOV",
-                    "source": "../Images/5/7.MOV"
-                },
-                {
-                    "type": "MOV",
-                    "source": "../Images/5/8.MOV"
-                },
-                {
-                    "type": "MOV",
-                    "source": "../Images/5/9.MOV"
-                },
-                {
-                    "type": "MOV",
-                    "source": "../Images/5/10.MOV"
+                    "type": "jpeg",
+                    "source": "../Images/5/1.jpeg"
                 },
                 {
                     "type": "MP4",
@@ -263,56 +223,8 @@
                     "source": "../Images/6/6.HEIC"
                 },
                 {
-                    "type": "JPEG",
-                    "source": "../Images/6/1.JPEG"
-                },
-                {
-                    "type": "MOV",
-                    "source": "../Images/6/1.MOV"
-                },
-                {
-                    "type": "MOV",
-                    "source": "../Images/6/2.MOV"
-                },
-                {
-                    "type": "MOV",
-                    "source": "../Images/6/3.MOV"
-                },
-                {
-                    "type": "MOV",
-                    "source": "../Images/6/4.MOV"
-                },
-                {
-                    "type": "MOV",
-                    "source": "../Images/6/5.MOV"
-                },
-                {
-                    "type": "MOV",
-                    "source": "../Images/6/6.MOV"
-                },
-                {
-                    "type": "MP4",
-                    "source": "../Images/6/1.MP4"
-                },
-                {
-                    "type": "MP4",
-                    "source": "../Images/6/2.MP4"
-                },
-                {
-                    "type": "MP4",
-                    "source": "../Images/6/3.MP4"
-                },
-                {
-                    "type": "MP4",
-                    "source": "../Images/6/4.MP4"
-                },
-                {
-                    "type": "MP4",
-                    "source": "../Images/6/5.MP4"
-                },
-                {
-                    "type": "MP4",
-                    "source": "../Images/6/6.MP4"
+                    "type": "jpeg",
+                    "source": "../Images/6/1.jpeg"
                 },
                 {
                     "type": "PNG",
@@ -332,24 +244,24 @@
             "image": "../Images/7",
             "media": [
                 {
-                    "type": "MOV",
-                    "source": "../Images/7/1.MOV"
+                    "type": "mp4",
+                    "source": "../Images/7/1.mp4"
                 },
                 {
-                    "type": "MOV",
-                    "source": "../Images/7/2.MOV"
+                    "type": "mp4",
+                    "source": "../Images/7/2.mp4"
                 },
                 {
-                    "type": "MOV",
-                    "source": "../Images/7/3.MOV"
+                    "type": "mp4",
+                    "source": "../Images/7/3.mp4"
                 },
                 {
-                    "type": "MOV",
-                    "source": "../Images/7/4.MOV"
+                    "type": "mp4",
+                    "source": "../Images/7/4.mp4"
                 },
                 {
-                    "type": "MOV",
-                    "source": "../Images/7/5.MOV"
+                    "type": "mp4",
+                    "source": "../Images/7/5.mp4"
                 }
             ]
         },
