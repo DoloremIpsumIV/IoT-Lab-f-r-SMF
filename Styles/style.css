@@ -798,6 +798,7 @@ body.single main {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 48px;
     align-items: start;
+    margin-bottom: 160px;
 }
 
 .media-grid div {
@@ -817,4 +818,11 @@ body.single main {
 .media-grid div video {
     justify-content: start;
     align-items: baseline;
+}
+
+@media (max-width: 900px) {
+
+    .media-grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
 }
