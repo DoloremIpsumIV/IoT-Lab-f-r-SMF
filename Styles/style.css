@@ -469,7 +469,7 @@ body.projects .search-button {
 
 #header-button {
     background-color: #ffe000;
-    height: 40px;
+    height: 24px;
     display: flex;
     justify-content: center;
     gap: 8px;
