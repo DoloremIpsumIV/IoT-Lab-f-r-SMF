@@ -918,6 +918,29 @@ body.single main {
     opacity: 1;
 }
 
+#partners-h3 {
+    padding: 25px;
+}
+
+#partners {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    gap: 30px;
+    padding-bottom: 20px;
+    align-items: start;
+}
+
+
+
+#partners img {
+    max-width: 200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 4px;
+    padding: 4px;
+    vertical-align: top;
+}
 
 @media (max-width: 900px) {
 
@@ -934,6 +957,10 @@ body.single main {
 
     .media-grid {
         grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    #partners {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -993,6 +1020,10 @@ footer {
 @media (max-width: 600px) {
     #footer-div {
         grid-template-columns: 1fr;
+    }
+
+    #partners {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
