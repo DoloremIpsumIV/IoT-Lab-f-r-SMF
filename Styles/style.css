@@ -813,6 +813,7 @@ body.single main {
 
 .media-grid div img {
     height: fit-content;
+    object-fit: cover;
 }
 
 .media-grid div video {
@@ -920,6 +921,9 @@ body.single main {
     .nav-toggle {
         display: inline-flex;
 
+    }
+    .media-grid{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 }
 
