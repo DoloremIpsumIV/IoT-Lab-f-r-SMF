@@ -19,8 +19,13 @@
 
                 <!-- Desktop-meny -->
                 <div id="rightside-nav-bar" class="nav-desktop">
+                    <button id="theme-switch">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><line x1="128" y1="40" x2="128" y2="16" fill="none" stroke="var(--color-bg)" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><circle cx="128" cy="128" r="56" fill="none" stroke="var(--color-bg)" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><line x1="64" y1="64" x2="48" y2="48" fill="none" stroke="var(--color-bg)" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><line x1="64" y1="192" x2="48" y2="208" fill="none" stroke="var(--color-bg)" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><line x1="192" y1="64" x2="208" y2="48" fill="none" stroke="var(--color-bg)" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><line x1="192" y1="192" x2="208" y2="208" fill="none" stroke="var(--color-bg)" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><line x1="40" y1="128" x2="16" y2="128" fill="none" stroke="var(--color-bg)" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><line x1="128" y1="216" x2="128" y2="240" fill="none" stroke="var(--color-bg)" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><line x1="216" y1="128" x2="240" y2="128" fill="none" stroke="var(--color-bg)" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/></svg>
+                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M108.11,28.11A96.09,96.09,0,0,0,227.89,147.89,96,96,0,1,1,108.11,28.11Z" fill="none" stroke="var(--color-bg)" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"/></svg>
+
+                    </button>
                     <a href="index.html">Hem</a>
-                    <a href="Projekt.html">Projekt</a>
+                    <a href="Projekt.html">Pilotcases</a>
                     <a href="https://lnu.se/forskning/forskningsprojekt/projekt-iot-lab-for-smf-2-.-0/">Om IoT Lab 2.0</a>
                     <a id="header-button" href="#interest" role="button">
                         <svg id="header-button-icon" width="24" height="24" fill="none" viewBox="0 0 24 24" aria-hidden="true">
@@ -29,7 +34,7 @@
                             <path stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 12.25H14.25"></path>
                             <path stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 15.25H14.25"></path>
                         </svg>
-                        <span class="button-text">Intresseanmälan</span>
+                        <span class="intbutton-text">Intresseanmälan</span>
                     </a>
                 </div>
 
@@ -46,9 +51,28 @@
             <!-- Mobilmeny (slide-in) -->
             <div id="mobile-menu" class="mobile-menu" hidden>
                 <a href="index.html">Hem</a>
-                <a href="Projekt.html">Projekt</a>
+                <a href="Projekt.html">Pilotcases</a>
                 <a href="https://lnu.se/forskning/forskningsprojekt/projekt-iot-lab-for-smf-2-.-0/">Om IoT Lab 2.0</a>
                 <a class="mobile-cta" href="#interest">Intresseanmälan</a>
+
+                 <button id="mobiletheme-switch"> 
+                        <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="3.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle>
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2.75V4.25"></path>
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 6.75L16.0659 7.93416"></path>
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21.25 12.0001L19.75 12.0001"></path>
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 17.2501L16.0659 16.066"></path>
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 19.75V21.25"></path>
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.9341 16.0659L6.74996 17.25"></path>
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.25 12.0001L2.75 12.0001"></path>
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.93405 7.93423L6.74991 6.75003"></path>
+                        </svg>
+                        <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18.25 15.7499C17.2352 16.2904 16.23 16.25 15 16.25C10.9959 16.25 7.75 13.0041 7.75 9.00001C7.75 7.77001 7.70951 6.76474 8.25 5.74994C5.96125 6.96891 4.75 9.2259 4.75 12C4.75 16.004 7.99594 19.25 12 19.25C14.7741 19.25 17.031 18.0387 18.25 15.7499Z"></path>
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 4.75C16 6.95914 14.9591 9 12.75 9C14.9591 9 16 11.0409 16 13.25C16 11.0409 17.0409 9 19.25 9C17.0409 9 16 6.95914 16 4.75Z"></path>
+                        </svg>
+
+                    </button>
             </div>
 
             <!-- Mörk bakgrund vid öppen meny -->
@@ -81,15 +105,15 @@
         <div id="body-grid">
             <div id="body-grid-header">
                 <h2>
-                    Utvalda Projekt
+                    Utvalda Pilotcases
                 </h2>
                 <button id="show-all-btn">
                     <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
-                        <path stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 8.75V17.25H8.75" />
-                        <path stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 17L6.75 6.75" />
+                        <path stroke="var(--color-bg)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 8.75V17.25H8.75" />
+                        <path stroke="var(--color-bg)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 17L6.75 6.75" />
                     </svg>
                     <p class="button-text">
-                        Alla projekt
+                        Alla Pilotcases
                     </p>
 
                 </button>
@@ -106,12 +130,12 @@
 
                 <div class="cta-actions">
                     <button id="show-all-btn" class="btn2">
-                        <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 8.75V17.25H8.75" />
-                            <path stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 17L6.75 6.75" />
+                        <svg width="24" height="24" fill="var(--color-text)" viewBox="0 0 24 24">
+                            <path stroke="var(--color-bg)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 8.75V17.25H8.75" />
+                            <path stroke="var(--color-bg)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 17L6.75 6.75" />
                         </svg>
                         <p class="button-text">
-                            Alla projekt
+                            Alla Pilotcases
                         </p>
 
                     </button>
@@ -185,7 +209,7 @@
                 </p>
                 <p>
                     <a class="p-gray" href="../Pages/Projekt.html">
-                        Alla projekt
+                        Alla Pilotcases
                     </a>
                 </p>
                 <p>
@@ -242,6 +266,8 @@
     <script src="../Script/script.js"></script>
     <script src="../Script/formScript.js"></script>
     <script src="../Script/nav.js"></script>
+    <script src="../Script/lightmode.js"></script>
+    <script src="../Script/mobileLightmode.js"></script>
 
 </body>
 

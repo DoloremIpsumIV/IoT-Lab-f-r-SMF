@@ -14,6 +14,7 @@ function buildCard(p) {
 
   var body = document.createElement("div");
   body.className = "card-body";
+  
 
   var h = document.createElement("h3");
   h.className = "card-title";
