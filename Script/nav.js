@@ -1,3 +1,4 @@
+// Functionality for the hamburger menu on mobile UI
 (function () {
     var toggle = document.getElementById("nav-toggle");
     var menu = document.getElementById("mobile-menu");

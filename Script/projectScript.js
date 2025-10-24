@@ -1,4 +1,4 @@
-
+// Returns a card object based on pilot case attribute
 function buildCard(p) {
   var card = document.createElement("article");
   card.className = "card";
@@ -14,7 +14,7 @@ function buildCard(p) {
 
   var body = document.createElement("div");
   body.className = "card-body";
-  
+
 
   var h = document.createElement("h3");
   h.className = "card-title";
@@ -56,16 +56,14 @@ function buildCard(p) {
   card.append(img, body);
   return card;
 }
-
-
+// Fetches all cases from json file
 async function fetchAllPilotCases() {
   var res = await fetch("../Data/projects.json");
   if (!res.ok) throw new Error("HTTP error! status: " + res.status);
   var data = await res.json();
   return data.pilotcases || [];
 }
-
-
+// Appends cards to grid body
 async function displayDescriptions() {
   var grid = document.getElementById("cards-grid");
   if (!grid) return;
@@ -73,15 +71,13 @@ async function displayDescriptions() {
 
   var all = await fetchAllPilotCases();
 
-
   all.sort(function (a, b) { return a.id - b.id; });
 
   all.forEach(function (p) {
     grid.appendChild(buildCard(p));
   });
 }
-
-
+// Show all button styling and functionality 
 document.addEventListener("DOMContentLoaded", function () {
   displayDescriptions().catch(console.error);
 
@@ -93,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-
+// Takes in the search query of the search bar element
 function startSearch() {
   var searchInput = document.getElementById("search-input");
   var query = searchInput.value.toLowerCase().trim();
@@ -105,7 +101,7 @@ function startSearch() {
 
   displaySearchResults(query);
 }
-
+// Clears grid area and renders all cards filtered from search query
 async function displaySearchResults(query) {
   var grid = document.getElementById("cards-grid");
   if (!grid) return;
@@ -128,7 +124,7 @@ async function displaySearchResults(query) {
     grid.innerHTML = '<p class="no-results">Inga projekt matchade din sökning.</p>';
   }
 }
-
+// Search button element functionality
 document.addEventListener("DOMContentLoaded", function () {
   displayDescriptions().catch(console.error);
 

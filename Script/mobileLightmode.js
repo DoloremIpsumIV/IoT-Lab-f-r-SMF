@@ -1,14 +1,13 @@
+// Renders the lightmode button on the mobile hamburger menu UI
+var mobilelightmode = localStorage.getItem("lightmode");
+var mobivarhemeSwitch = document.getElementById("mobivarheme-switch");
 
-let mobilelightmode = localStorage.getItem("lightmode");
-const mobilethemeSwitch = document.getElementById("mobiletheme-switch");
-
-
-const mobileenableLightmode = () => {
+var mobileenableLightmode = () => {
     document.body.classList.add("lightmode");
     localStorage.setItem("lightmode", "active");
 }
 
-const mobiledisableLightmode = () => {
+var mobiledisableLightmode = () => {
     document.body.classList.remove("lightmode");
     localStorage.setItem("lightmode", "inactive");
 }
@@ -17,13 +16,7 @@ if (lightmode === "active") {
     mobileenableLightmode();
 }
 
-mobilethemeSwitch.addEventListener("click", () => {
+mobivarhemeSwitch.addEventListener("click", () => {
     mobilelightmode = localStorage.getItem("lightmode");
     mobilelightmode !== "active" ? mobileenableLightmode() : mobiledisableLightmode();
 });
-
-
-
-
-
-

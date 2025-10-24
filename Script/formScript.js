@@ -1,3 +1,4 @@
+// Enables the form to send emails to Elin
 document.addEventListener("DOMContentLoaded", function () {
   var form = document.getElementById("emailForm");
   var nameEl = document.getElementById("nameInput");
@@ -11,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-
 
     if (!nameEl.value.trim() || !compEl.value.trim() || !emailEl.value.trim() || !interest.value.trim()) {
       alert("Fyll i alla obligatoriska fält.");
@@ -31,9 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "?subject=" + encodeURIComponent(subject) +
       "&body=" + encodeURIComponent(body);
 
-
     window.location.href = mailtoLink;
-
 
     form.reset();
   });

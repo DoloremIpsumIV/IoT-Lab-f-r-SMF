@@ -1,4 +1,4 @@
-
+// Returns a card object based on pilot case attribute
 function buildCard(p) {
   var card = document.createElement("article");
   card.className = "card";
@@ -55,32 +55,21 @@ function buildCard(p) {
   card.append(img, body);
   return card;
 }
-
-
+// Fetches all cases from json file
 async function fetchAllPilotCases() {
   var res = await fetch("../Data/projects.json");
   if (!res.ok) throw new Error("HTTP error! status: " + res.status);
   var data = await res.json();
   return data.pilotcases || [];
 }
-
-async function fetchPilotCaseById(id) {
-  var all = await fetchAllPilotCases();
-  var pc = all.find(function (c) { return c.id === id; });
-  if (!pc) throw new Error("Inga pilot studier hittade med ID: " + id);
-  return pc;
-}
-
-
+// Shows selected pilot cases 
 async function displayDescriptions() {
-  var grid = document.getElementById("cards-grid");   
+  var grid = document.getElementById("cards-grid");
   if (!grid) return;
   grid.innerHTML = "";
 
-
   var selectedPilotCases = [6, 5, 16, 2, 7, 3];
 
- 
   var all = await fetchAllPilotCases();
 
   selectedPilotCases.forEach(function (id) {
@@ -88,7 +77,7 @@ async function displayDescriptions() {
     if (p) grid.appendChild(buildCard(p));
   });
 }
-
+// Show all button styling and functionality 
 document.addEventListener("DOMContentLoaded", function () {
   displayDescriptions().catch(console.error);
 
@@ -100,7 +89,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
- 
   var showAllButton2 = document.getElementById("show-all-cta") || document.querySelector(".btn2");
   if (showAllButton2) {
     showAllButton2.style.cursor = "pointer";
